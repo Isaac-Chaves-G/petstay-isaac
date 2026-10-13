@@ -1,0 +1,508 @@
+[
+  {
+    "id": "TC01",
+    "title": "Acceso con credenciales válidas",
+    "tags": [
+      "@TC01",
+      "@REQ_ACCESO_01",
+      "@smoke",
+      "@positivo"
+    ],
+    "requirements": [
+      "@REQ_ACCESO_01"
+    ],
+    "feature": "src/test/resources/features/acceso.feature",
+    "background": "",
+    "steps": "Dado el dueño está en el acceso de PetStay\n    Cuando inicia sesión con usuario \"dueno\" y contraseña \"huellitas123\"\n    Entonces puede gestionar sus mascotas",
+    "issue": null
+  },
+  {
+    "id": "TC02",
+    "title": "Rechazo de credenciales inválidas",
+    "tags": [
+      "@TC02",
+      "@REQ_ACCESO_02",
+      "@negativo"
+    ],
+    "requirements": [
+      "@REQ_ACCESO_02"
+    ],
+    "feature": "src/test/resources/features/acceso.feature",
+    "background": "",
+    "steps": "Dado el dueño está en el acceso de PetStay\n    Cuando inicia sesión con usuario \"<usuario>\" y contraseña \"<contraseña>\"\n    Entonces el acceso es rechazado con \"Usuario o contraseña incorrectos\"\n\n    Ejemplos:\n      | usuario | contraseña    |\n      | dueno   | incorrecta    |\n      | ajeno   | huellitas123  |",
+    "issue": null
+  },
+  {
+    "id": "TC03",
+    "title": "Registro y clasificación por peso",
+    "tags": [
+      "@TC03",
+      "@REQ_MASCOTAS_01",
+      "@REQ_MASCOTAS_03",
+      "@REQ_MASCOTAS_05",
+      "@positivo",
+      "@frontera",
+      "@smoke"
+    ],
+    "requirements": [
+      "@REQ_MASCOTAS_01",
+      "@REQ_MASCOTAS_03",
+      "@REQ_MASCOTAS_05"
+    ],
+    "feature": "src/test/resources/features/mascotas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Cuando registra una mascota con estos datos:\n      | nombre | especie   | peso   | edad | vacunas |\n      | Luna   | <especie> | <peso> | 3    | sí      |\n    Entonces la mascota \"Luna\" aparece como \"<especie>\" con peso \"<visible>\", edad \"3\" y tamaño \"<tamaño>\"\n    Y hay 1 mascotas registradas\n\n    Ejemplos:\n      | especie | peso | visible | tamaño  |\n      | Gato    | 0.1  | 0,1     | Pequeño |\n      | Perro   | 10   | 10      | Pequeño |\n      | Perro   | 10.1 | 10,1    | Mediano |\n      | Perro   | 24.9 | 24,9    | Mediano |\n      | Perro   | 25   | 25      | Grande  |\n      | Perro   | 80   | 80      | Grande  |",
+    "issue": null
+  },
+  {
+    "id": "TC04",
+    "title": "Rechazo de mascota sin vacunas al día",
+    "tags": [
+      "@TC04",
+      "@REQ_MASCOTAS_02",
+      "@negativo"
+    ],
+    "requirements": [
+      "@REQ_MASCOTAS_02"
+    ],
+    "feature": "src/test/resources/features/mascotas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Cuando registra una mascota con estos datos:\n      | nombre | especie | peso | edad | vacunas |\n      | Toby   | Perro   | 8    | 2    | no      |\n    Entonces el registro es rechazado con \"No podemos hospedar mascotas sin vacunas al día\"\n    Y hay 0 mascotas registradas",
+    "issue": null
+  },
+  {
+    "id": "TC05",
+    "title": "Rechazo de nombre duplicado sin distinguir mayúsculas",
+    "tags": [
+      "@TC05",
+      "@REQ_MASCOTAS_04",
+      "@negativo"
+    ],
+    "requirements": [
+      "@REQ_MASCOTAS_04"
+    ],
+    "feature": "src/test/resources/features/mascotas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Luna\" de especie \"Gato\" y peso \"5\"\n    Cuando registra una mascota con estos datos:\n      | nombre | especie | peso | edad | vacunas |\n      | LUNA   | Perro   | 8    | 2    | sí      |\n    Entonces el campo de mascota \"nombre\" indica \"Ya existe una mascota registrada con ese nombre\"\n    Y hay 1 mascotas registradas",
+    "issue": null
+  },
+  {
+    "id": "TC06",
+    "title": "Validación de longitud y obligatoriedad del nombre",
+    "tags": [
+      "@TC06",
+      "@REQ_MASCOTAS_01",
+      "@negativo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_MASCOTAS_01"
+    ],
+    "feature": "src/test/resources/features/mascotas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Cuando registra una mascota con estos datos:\n      | nombre   | especie | peso | edad | vacunas |\n      | <nombre> | Perro   | 8    | 2    | sí      |\n    Entonces el campo de mascota \"nombre\" indica \"<mensaje>\"\n    Y hay 0 mascotas registradas\n\n    Ejemplos:\n      | nombre                          | mensaje                                      |\n      |                                 | Este campo es obligatorio                    |\n      | A                               | El nombre debe tener entre 2 y 30 caracteres  |\n      | ABCDEFGHIJKLMNOPQRSTUVWXYZABCDE | El nombre debe tener entre 2 y 30 caracteres  |",
+    "issue": null
+  },
+  {
+    "id": "TC07",
+    "title": "Rechazo de peso fuera de rango",
+    "tags": [
+      "@TC07",
+      "@REQ_MASCOTAS_01",
+      "@negativo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_MASCOTAS_01"
+    ],
+    "feature": "src/test/resources/features/mascotas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Cuando registra una mascota con estos datos:\n      | nombre | especie | peso   | edad | vacunas |\n      | Toby   | Perro   | <peso> | 2    | sí      |\n    Entonces el campo de mascota \"peso\" indica \"El peso debe ser mayor que 0 y máximo 80 kg\"\n    Y hay 0 mascotas registradas\n\n    Ejemplos:\n      | peso |\n      | 0    |\n      | 80.1 |\n      | -1   |",
+    "issue": null
+  },
+  {
+    "id": "TC08",
+    "title": "Rechazo de edad fuera de rango",
+    "tags": [
+      "@TC08",
+      "@REQ_MASCOTAS_01",
+      "@negativo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_MASCOTAS_01"
+    ],
+    "feature": "src/test/resources/features/mascotas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Cuando registra una mascota con estos datos:\n      | nombre | especie | peso | edad   | vacunas |\n      | Toby   | Perro   | 8    | <edad> | sí      |\n    Entonces el campo de mascota \"edad\" indica \"La edad debe estar entre 0 y 25 años\"\n    Y hay 0 mascotas registradas\n\n    Ejemplos:\n      | edad |\n      | -1   |\n      | 26   |",
+    "issue": null
+  },
+  {
+    "id": "TC09",
+    "title": "Aceptación de las edades límite",
+    "tags": [
+      "@TC09",
+      "@REQ_MASCOTAS_01",
+      "@positivo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_MASCOTAS_01"
+    ],
+    "feature": "src/test/resources/features/mascotas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Cuando registra una mascota con estos datos:\n      | nombre | especie | peso | edad   | vacunas |\n      | Toby   | Perro   | 8    | <edad> | sí      |\n    Entonces la mascota \"Toby\" aparece como \"Perro\" con peso \"8\", edad \"<edad>\" y tamaño \"Pequeño\"\n    Y hay 1 mascotas registradas\n\n    Ejemplos:\n      | edad |\n      | 0    |\n      | 25   |",
+    "issue": null
+  },
+  {
+    "id": "TC10",
+    "title": "Registro previo requerido para reservar",
+    "tags": [
+      "@TC10",
+      "@REQ_RESERVAS_01",
+      "@negativo"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_01"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Cuando consulta la disponibilidad para reservar sin mascotas\n    Entonces debe registrar una mascota antes de reservar",
+    "issue": null
+  },
+  {
+    "id": "TC11",
+    "title": "Tarifa de alojamiento según el tamaño",
+    "tags": [
+      "@TC11",
+      "@REQ_RESERVAS_05",
+      "@REQ_RESERVAS_08",
+      "@positivo"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_05",
+      "@REQ_RESERVAS_08"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"<peso>\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 2 noches con entrada en 10 días, baño \"no\" y paseo \"no\"\n    Entonces el resumen muestra 2 noches, alojamiento <alojamiento>, descuento 0, baño 0, paseo 0 y total <alojamiento>\n\n    Ejemplos:\n      | peso | alojamiento |\n      | 10   | 80000       |\n      | 15   | 110000      |\n      | 25   | 140000      |",
+    "issue": null
+  },
+  {
+    "id": "TC12",
+    "title": "Baño como cargo único por estadía",
+    "tags": [
+      "@TC12",
+      "@REQ_RESERVAS_06",
+      "@REQ_RESERVAS_08",
+      "@positivo"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_06",
+      "@REQ_RESERVAS_08"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 2 noches con entrada en 10 días, baño \"sí\" y paseo \"no\"\n    Entonces el resumen muestra 2 noches, alojamiento 80000, descuento 0, baño 25000, paseo 0 y total 105000",
+    "issue": null
+  },
+  {
+    "id": "TC13",
+    "title": "Descuento de estadía larga aplicado solo al alojamiento",
+    "tags": [
+      "@TC13",
+      "@REQ_RESERVAS_07",
+      "@REQ_RESERVAS_08",
+      "@positivo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_07",
+      "@REQ_RESERVAS_08"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 8 noches con entrada en 10 días, baño \"sí\" y paseo \"no\"\n    Entonces el resumen muestra 8 noches, alojamiento 320000, descuento 48000, baño 25000, paseo 0 y total 297000",
+    "issue": null
+  },
+  {
+    "id": "TC14",
+    "title": "Siete noches no reciben descuento",
+    "tags": [
+      "@TC14",
+      "@REQ_RESERVAS_07",
+      "@positivo",
+      "@frontera",
+      "@defecto_conocido"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_07"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 7 noches con entrada en 10 días, baño \"no\" y paseo \"no\"\n    Entonces el resumen muestra 7 noches, alojamiento 280000, descuento 0, baño 0, paseo 0 y total 280000",
+    "issue": null
+  },
+  {
+    "id": "TC15",
+    "title": "Paseo diario cobrado por cada noche",
+    "tags": [
+      "@TC15",
+      "@REQ_RESERVAS_06",
+      "@positivo",
+      "@defecto_conocido"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_06"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 3 noches con entrada en 10 días, baño \"no\" y paseo \"sí\"\n    Entonces el resumen muestra 3 noches, alojamiento 120000, descuento 0, baño 0, paseo 30000 y total 150000",
+    "issue": null
+  },
+  {
+    "id": "TC16",
+    "title": "Rechazo de entrada anterior a hoy",
+    "tags": [
+      "@TC16",
+      "@REQ_RESERVAS_03",
+      "@negativo"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_03"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 2 noches con entrada en -1 días, baño \"no\" y paseo \"no\"\n    Entonces el campo de reserva \"entrada\" indica \"La fecha de entrada no puede ser anterior a hoy\"",
+    "issue": null
+  },
+  {
+    "id": "TC17",
+    "title": "Rechazo de salida que no es posterior a la entrada",
+    "tags": [
+      "@TC17",
+      "@REQ_RESERVAS_03",
+      "@negativo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_03"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita <noches> noches con entrada en 10 días, baño \"no\" y paseo \"no\"\n    Entonces el campo de reserva \"salida\" indica \"La fecha de salida debe ser posterior a la de entrada\"\n\n    Ejemplos:\n      | noches |\n      | 0      |\n      | -1     |",
+    "issue": null
+  },
+  {
+    "id": "TC18",
+    "title": "Rechazo de fechas inválidas",
+    "tags": [
+      "@TC18",
+      "@REQ_RESERVAS_02",
+      "@negativo"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_02"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita entrada \"<entrada>\" y salida \"10/01/2099\"\n    Entonces el campo de reserva \"entrada\" indica \"Usa el formato DD/MM/AAAA con una fecha válida\"\n\n    Ejemplos:\n      | entrada    |\n      | 2099-01-01 |\n      | 32/01/2099 |",
+    "issue": null
+  },
+  {
+    "id": "TC19",
+    "title": "Rechazo de una estadía de 31 noches",
+    "tags": [
+      "@TC19",
+      "@REQ_RESERVAS_04",
+      "@negativo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_04"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 31 noches con entrada en 10 días, baño \"no\" y paseo \"no\"\n    Entonces el campo de reserva \"salida\" indica \"La estadía máxima es de 30 noches\"",
+    "issue": null
+  },
+  {
+    "id": "TC20",
+    "title": "Aceptación de una estadía de 30 noches",
+    "tags": [
+      "@TC20",
+      "@REQ_RESERVAS_04",
+      "@positivo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_04"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 30 noches con entrada en 10 días, baño \"no\" y paseo \"no\"\n    Entonces el resumen muestra 30 noches, alojamiento 1200000, descuento 180000, baño 0, paseo 0 y total 1020000",
+    "issue": null
+  },
+  {
+    "id": "TC21",
+    "title": "Rechazo de fechas cruzadas para la misma mascota",
+    "tags": [
+      "@TC21",
+      "@REQ_RESERVAS_09",
+      "@negativo"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_09"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Y tiene una reserva de 3 noches para \"Toby\" con entrada en 10 días\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 2 noches con entrada en 11 días, baño \"no\" y paseo \"no\"\n    Entonces la reserva es rechazada con \"Esta mascota ya tiene una reserva activa en esas fechas\"\n    Cuando consulta sus reservas\n    Entonces hay 1 reservas en la lista",
+    "issue": null
+  },
+  {
+    "id": "TC22",
+    "title": "Reservas consecutivas comparten el día de salida y entrada",
+    "tags": [
+      "@TC22",
+      "@REQ_RESERVAS_09",
+      "@positivo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_09"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Y tiene una reserva de 3 noches para \"Toby\" con entrada en 10 días\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 2 noches con entrada en 13 días, baño \"no\" y paseo \"no\"\n    Y confirma la estadía\n    Y consulta sus reservas\n    Entonces su reserva aparece confirmada por 80000 pesos con código válido y los datos solicitados\n    Y hay 2 reservas en la lista",
+    "issue": null
+  },
+  {
+    "id": "TC23",
+    "title": "Paseo diario no disponible para gatos",
+    "tags": [
+      "@TC23",
+      "@REQ_RESERVAS_06",
+      "@negativo"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_06"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Luna\" de especie \"Gato\" y peso \"5\"\n    Cuando prepara una estadía para \"Luna\"\n    Entonces el paseo diario no está disponible",
+    "issue": null
+  },
+  {
+    "id": "TC24",
+    "title": "Confirmación y consulta de la reserva",
+    "tags": [
+      "@TC24",
+      "@REQ_RESERVAS_10",
+      "@REQ_CANCELACION_01",
+      "@positivo",
+      "@smoke"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_10",
+      "@REQ_CANCELACION_01"
+    ],
+    "feature": "src/test/resources/features/reservas.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay",
+    "steps": "Dado tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 2 noches con entrada en 10 días, baño \"no\" y paseo \"no\"\n    Y confirma la estadía\n    Y consulta sus reservas\n    Entonces su reserva aparece confirmada por 80000 pesos con código válido y los datos solicitados\n    Y hay 1 reservas en la lista",
+    "issue": null
+  },
+  {
+    "id": "TC25",
+    "title": "Cancelación con tres días de anticipación y reembolso completo",
+    "tags": [
+      "@TC25",
+      "@REQ_CANCELACION_02",
+      "@REQ_CANCELACION_03",
+      "@REQ_CANCELACION_04",
+      "@positivo",
+      "@frontera",
+      "@smoke"
+    ],
+    "requirements": [
+      "@REQ_CANCELACION_02",
+      "@REQ_CANCELACION_03",
+      "@REQ_CANCELACION_04"
+    ],
+    "feature": "src/test/resources/features/cancelaciones.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay\n    Y tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"",
+    "steps": "Dado tiene una reserva de 2 noches para \"Toby\" con entrada en 3 días\n    Cuando solicita cancelar su reserva\n    Entonces se le pide confirmar con un reembolso del 100 por ciento\n    Cuando acepta la cancelación\n    Entonces la reserva queda cancelada con reembolso de 80000 pesos y no admite otra cancelación",
+    "issue": null
+  },
+  {
+    "id": "TC26",
+    "title": "Cancelación con uno o dos días y reembolso parcial",
+    "tags": [
+      "@TC26",
+      "@REQ_CANCELACION_03",
+      "@REQ_CANCELACION_04",
+      "@positivo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_CANCELACION_03",
+      "@REQ_CANCELACION_04"
+    ],
+    "feature": "src/test/resources/features/cancelaciones.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay\n    Y tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"",
+    "steps": "Dado tiene una reserva de 2 noches para \"Toby\" con entrada en <dias> días\n    Cuando solicita cancelar su reserva\n    Entonces se le pide confirmar con un reembolso del 50 por ciento\n    Cuando acepta la cancelación\n    Entonces la reserva queda cancelada con reembolso de 40000 pesos y no admite otra cancelación\n\n    Ejemplos:\n      | dias |\n      | 1    |\n      | 2    |",
+    "issue": null
+  },
+  {
+    "id": "TC27",
+    "title": "Cancelación el mismo día sin reembolso",
+    "tags": [
+      "@TC27",
+      "@REQ_CANCELACION_03",
+      "@REQ_CANCELACION_04",
+      "@positivo",
+      "@frontera"
+    ],
+    "requirements": [
+      "@REQ_CANCELACION_03",
+      "@REQ_CANCELACION_04"
+    ],
+    "feature": "src/test/resources/features/cancelaciones.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay\n    Y tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"",
+    "steps": "Dado tiene una reserva de 2 noches para \"Toby\" con entrada en 0 días\n    Cuando solicita cancelar su reserva\n    Entonces se le pide confirmar con un reembolso del 0 por ciento\n    Cuando acepta la cancelación\n    Entonces la reserva queda cancelada con reembolso de 0 pesos y no admite otra cancelación",
+    "issue": null
+  },
+  {
+    "id": "TC28",
+    "title": "Conservar la reserva al rechazar la cancelación",
+    "tags": [
+      "@TC28",
+      "@REQ_CANCELACION_02",
+      "@positivo"
+    ],
+    "requirements": [
+      "@REQ_CANCELACION_02"
+    ],
+    "feature": "src/test/resources/features/cancelaciones.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay\n    Y tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"",
+    "steps": "Dado tiene una reserva de 2 noches para \"Toby\" con entrada en 3 días\n    Cuando solicita cancelar su reserva\n    Entonces se le pide confirmar con un reembolso del 100 por ciento\n    Cuando decide conservar la reserva\n    Entonces su reserva aparece confirmada por 80000 pesos con código válido y los datos solicitados",
+    "issue": null
+  },
+  {
+    "id": "TC29",
+    "title": "Una cancelación libera las fechas para una nueva reserva",
+    "tags": [
+      "@TC29",
+      "@REQ_RESERVAS_09",
+      "@REQ_CANCELACION_04",
+      "@positivo"
+    ],
+    "requirements": [
+      "@REQ_RESERVAS_09",
+      "@REQ_CANCELACION_04"
+    ],
+    "feature": "src/test/resources/features/cancelaciones.feature",
+    "background": "Dado el dueño ha iniciado sesión en PetStay\n    Y tiene registrada a \"Toby\" de especie \"Perro\" y peso \"10\"",
+    "steps": "Dado tiene una reserva de 2 noches para \"Toby\" con entrada en 3 días\n    Cuando solicita cancelar su reserva\n    Y acepta la cancelación\n    Entonces la reserva queda cancelada con reembolso de 80000 pesos y no admite otra cancelación\n    Cuando prepara una estadía para \"Toby\"\n    Y solicita 2 noches con entrada en 3 días, baño \"no\" y paseo \"no\"\n    Y confirma la estadía\n    Y consulta sus reservas\n    Entonces su reserva aparece confirmada por 80000 pesos con código válido y los datos solicitados\n    Y hay 2 reservas en la lista",
+    "issue": null
+  }
+]

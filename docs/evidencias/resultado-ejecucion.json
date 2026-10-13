@@ -1,0 +1,190 @@
+{
+  "command": "gradlew.bat clean test aggregate --console=plain",
+  "application": "https://petstay-aphn.onrender.com",
+  "started_bogota": "2026-10-12T22:08:23.744000-05:00",
+  "executions": 46,
+  "passed": 44,
+  "failures": 2,
+  "errors": 0,
+  "skipped": 0,
+  "cases": [
+    {
+      "id": "TC01",
+      "name": "Acceso con credenciales válidas",
+      "result": "SUCCESS",
+      "report_json": "f7ba83f7495e3e221c3bd419c1ec856bc283ab3c2df571c68545f88b9d9cf2d9.json"
+    },
+    {
+      "id": "TC02",
+      "name": "Rechazo de credenciales inválidas",
+      "result": "SUCCESS",
+      "report_json": "d42fe7905fc1f6bc40eb44d37ee35418ec12a7daa05fa13285b7134a52980347.json"
+    },
+    {
+      "id": "TC03",
+      "name": "Registro y clasificación por peso",
+      "result": "SUCCESS",
+      "report_json": "2de4e5e25b472546b2a2f5380b0ab6e0b24194398dcf53166003fcc3c20e8136.json"
+    },
+    {
+      "id": "TC04",
+      "name": "Rechazo de mascota sin vacunas al día",
+      "result": "SUCCESS",
+      "report_json": "c04f5267c875dc5deee6c37076a6fe30c530512208a04d3c95e8a6e90e74da0f.json"
+    },
+    {
+      "id": "TC05",
+      "name": "Rechazo de nombre duplicado sin distinguir mayúsculas",
+      "result": "SUCCESS",
+      "report_json": "69b0287cab64b17825f8aff937c6ca0d22b3d62c01dca5a6887e3f52e182933c.json"
+    },
+    {
+      "id": "TC06",
+      "name": "Validación de longitud y obligatoriedad del nombre",
+      "result": "SUCCESS",
+      "report_json": "0893c17897364b241fed67cc7baea8506823d5a58a0741260e8e82cdb150237e.json"
+    },
+    {
+      "id": "TC07",
+      "name": "Rechazo de peso fuera de rango",
+      "result": "SUCCESS",
+      "report_json": "c7381fd5f478ce30b95f8f9a5640f49b245b03837821da2ccdca94cd59fc293f.json"
+    },
+    {
+      "id": "TC08",
+      "name": "Rechazo de edad fuera de rango",
+      "result": "SUCCESS",
+      "report_json": "fabe833aa8002462e3e05f34585971a7756ac6191b374028580d0577bbac9634.json"
+    },
+    {
+      "id": "TC09",
+      "name": "Aceptación de las edades límite",
+      "result": "SUCCESS",
+      "report_json": "5812e7a854d9ebcd6339f8b0a4c61cd10c9532af05f85967fc0e86cdd2553a2f.json"
+    },
+    {
+      "id": "TC10",
+      "name": "Registro previo requerido para reservar",
+      "result": "SUCCESS",
+      "report_json": "b528b1953bf364ff319dc36575d917ba3952127b01152cf1488c87296d9c83b2.json"
+    },
+    {
+      "id": "TC11",
+      "name": "Tarifa de alojamiento según el tamaño",
+      "result": "SUCCESS",
+      "report_json": "f634275c01f0d1ea91ad4c47734d77b032940d5f5daca3c1b6d83b9ce8b1ba41.json"
+    },
+    {
+      "id": "TC12",
+      "name": "Baño como cargo único por estadía",
+      "result": "SUCCESS",
+      "report_json": "bd8bf4d7a28d1d41c41c8e3f5f9960ce73e47b60e0ae5db04d7e1a3b4598b0fa.json"
+    },
+    {
+      "id": "TC13",
+      "name": "Descuento de estadía larga aplicado solo al alojamiento",
+      "result": "SUCCESS",
+      "report_json": "e0d89827d240c0b286abd2d1404bd22d4b502d32db657bbc51ce8fe995d54516.json"
+    },
+    {
+      "id": "TC14",
+      "name": "Siete noches no reciben descuento",
+      "result": "FAILURE",
+      "report_json": "69ea6846299efea50893a605eef79d988f362e6335ca237c32defdc4599f0fde.json",
+      "screenshot": "TC14.png",
+      "failure": "Expected: descuento that is not displayed\nActual:   web element is displayed"
+    },
+    {
+      "id": "TC15",
+      "name": "Paseo diario cobrado por cada noche",
+      "result": "FAILURE",
+      "report_json": "baa8523b457edcd3678a9f2a913acd34bbc4fe3bab65ad351ad90197b2df6d11.json",
+      "screenshot": "TC15.png",
+      "failure": "Expected: valor en pesos de precio de los paseos that is equal to: <30000>\nActual:   <10000>"
+    },
+    {
+      "id": "TC16",
+      "name": "Rechazo de entrada anterior a hoy",
+      "result": "SUCCESS",
+      "report_json": "44c8c5f07bf3c490fb1e2bc153f180ccfd5d060596509837ae3c1c9c9a16cfed.json"
+    },
+    {
+      "id": "TC17",
+      "name": "Rechazo de salida que no es posterior a la entrada",
+      "result": "SUCCESS",
+      "report_json": "44eb8ca2c8a31f34bfa0ffb696a630114294d3e82b355d55b059e4ffa6050413.json"
+    },
+    {
+      "id": "TC18",
+      "name": "Rechazo de fechas inválidas",
+      "result": "SUCCESS",
+      "report_json": "e6107fd8033d6a826f10eb29817c1591081915eb45da71380662c6d9dd95d667.json"
+    },
+    {
+      "id": "TC19",
+      "name": "Rechazo de una estadía de 31 noches",
+      "result": "SUCCESS",
+      "report_json": "f202d8326c1e7d701b5a5dfcbba28c6e11e635379d2bc99a32dd77c794f414ad.json"
+    },
+    {
+      "id": "TC20",
+      "name": "Aceptación de una estadía de 30 noches",
+      "result": "SUCCESS",
+      "report_json": "1671b87ac7888d679fb0158c0ea5168a96fa4f8339a920fe7d6769ab6d151a13.json"
+    },
+    {
+      "id": "TC21",
+      "name": "Rechazo de fechas cruzadas para la misma mascota",
+      "result": "SUCCESS",
+      "report_json": "8da8e4de9ba5510580d246427e2e23b50c2d5a3b9de779ab295d3d1042b998c1.json"
+    },
+    {
+      "id": "TC22",
+      "name": "Reservas consecutivas comparten el día de salida y entrada",
+      "result": "SUCCESS",
+      "report_json": "4250d9f785a09b069de76e91ed7fef9c1063edb8f2f79c7adbd7ad4af9efdac2.json"
+    },
+    {
+      "id": "TC23",
+      "name": "Paseo diario no disponible para gatos",
+      "result": "SUCCESS",
+      "report_json": "d3f8ed4f4e7ed9e274c9752d2e1844080d7d8cc6f5d8aed73099620d25f451f2.json"
+    },
+    {
+      "id": "TC24",
+      "name": "Confirmación y consulta de la reserva",
+      "result": "SUCCESS",
+      "report_json": "b5d9d593c9fbbb8e8b60e30d28e5ac09842c249a85cbcdc9d5c6b43c03a5c760.json"
+    },
+    {
+      "id": "TC25",
+      "name": "Cancelación con tres días de anticipación y reembolso completo",
+      "result": "SUCCESS",
+      "report_json": "938377e8fc0487e71e2f8bccdb77a822c0de30cc289c27a00c591f10e2f53e84.json"
+    },
+    {
+      "id": "TC26",
+      "name": "Cancelación con uno o dos días y reembolso parcial",
+      "result": "SUCCESS",
+      "report_json": "01d98442f21b2b480d15529e5d47523c73e244565469aa474138eb4b4bd34400.json"
+    },
+    {
+      "id": "TC27",
+      "name": "Cancelación el mismo día sin reembolso",
+      "result": "SUCCESS",
+      "report_json": "e0590f191ef9997ed0b445d26b3dd36ad907854136d19e0cf299eceb342005fa.json"
+    },
+    {
+      "id": "TC28",
+      "name": "Conservar la reserva al rechazar la cancelación",
+      "result": "SUCCESS",
+      "report_json": "b3642d09d2aa0eb95e0205098c183cc1237e9dc97e8e78a1fd99bd0bbdf0f21b.json"
+    },
+    {
+      "id": "TC29",
+      "name": "Una cancelación libera las fechas para una nueva reserva",
+      "result": "SUCCESS",
+      "report_json": "86d6812a7d1d57ed53be977fd2953d816b75d258966af70a35dd39a16062e6de.json"
+    }
+  ]
+}

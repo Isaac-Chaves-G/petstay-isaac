@@ -1,0 +1,8 @@
+.gradle/
+build/
+target/
+.idea/
+*.iml
+.env
+*.log
+__pycache__/

@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.java text eol=lf
+*.feature text eol=lf
+*.yml text eol=lf
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+*.jar binary
+docs/evidencias/junit.xml -text -diff

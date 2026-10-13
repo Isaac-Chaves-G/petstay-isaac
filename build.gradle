@@ -1,0 +1,57 @@
+plugins {
+    id 'java'
+    id 'net.serenity-bdd.serenity-gradle-plugin' version '4.2.32'
+}
+
+repositories { mavenCentral() }
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+def serenityVersion = '4.2.32'
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.13.0')
+    testImplementation "net.serenity-bdd:serenity-core:${serenityVersion}"
+    testImplementation "net.serenity-bdd:serenity-cucumber:${serenityVersion}"
+    testImplementation "net.serenity-bdd:serenity-screenplay:${serenityVersion}"
+    testImplementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityVersion}"
+    testImplementation "net.serenity-bdd:serenity-ensure:${serenityVersion}"
+    testImplementation 'io.cucumber:cucumber-junit-platform-engine:7.22.2'
+    testImplementation 'org.junit.platform:junit-platform-suite'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.17'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 17
+}
+
+test {
+    useJUnitPlatform()
+    systemProperties System.getProperties()
+    maxParallelForks = 1
+    testLogging { events 'passed', 'failed', 'skipped'; exceptionFormat 'short' }
+    finalizedBy 'aggregate'
+}
+
+// The Serenity report is authoritative: some nested Screenplay failures in
+// Serenity 4 do not propagate to JUnit Platform. Never publish a false green CI.
+tasks.register('verifySerenityResults') {
+    doLast {
+        def outcomes = fileTree('target/site/serenity').matching { include '*.json' }
+                .files.collect { new groovy.json.JsonSlurper().parse(it) }
+                .findAll { it.containsKey('testSteps') }
+        if (outcomes.isEmpty()) {
+            throw new GradleException('No Serenity test outcomes were generated.')
+        }
+        def failures = outcomes.findAll { it.result in ['FAILURE', 'ERROR', 'COMPROMISED'] }
+        failures.each { logger.error("Serenity ${it.result}: ${it.name}") }
+        if (!failures.isEmpty()) {
+            throw new GradleException("Serenity reported ${failures.size()} failed scenarios. See target/site/serenity/index.html")
+        }
+    }
+}
+tasks.named('aggregate') { finalizedBy 'verifySerenityResults' }
