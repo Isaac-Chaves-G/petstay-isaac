@@ -1,0 +1,53 @@
+name: Publicar casos de prueba
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publicar-casos.yml'
+      - 'scripts/publish_testcases.py'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: publicar-casos
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Crear o reutilizar issues y vincular escenarios
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: python scripts/publish_testcases.py --repo "$REPOSITORY"
+      - name: Guardar trazabilidad en main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/github-mapping.json docs/TRAZABILIDAD.md docs/testcases.json docs/issues src/test/resources
+          if ! git diff --cached --quiet; then
+            git commit -m "Vincular casos de prueba con sus issues de GitHub"
+            git push origin HEAD:main
+          fi
+      - name: Resumen de publicación
+        env:
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "Los 29 casos están disponibles en https://github.com/$REPOSITORY/issues" >> "$GITHUB_STEP_SUMMARY"
+          echo 'Para ejecutar uno, abre su issue y aplica la etiqueta ejecutar-prueba. Para repetir, retírala y vuelve a añadirla.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Conservar mapa incluso si falla el push
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trazabilidad-issues
+          path: docs/github-mapping.json
+          if-no-files-found: warn

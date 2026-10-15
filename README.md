@@ -72,20 +72,31 @@ Referencias técnicas: [POM oficial de Serenity](https://repo.maven.apache.org/m
 
 Ver `docs/TRAZABILIDAD.md`. Cada caso tiene su etiqueta `@TCxx` y etiquetas `@REQ_...`; todos pertenecen a `@HU02`. Los números reales `@issue:N` se incorporan al publicar los casos. No se usan números de issue ficticios.
 
-1. Publicar este proyecto en el repositorio del estudiante y mantener `main` como rama predeterminada.
-2. Crear un GitHub Project para el taller, o usar uno existente, y obtener su número.
-3. Con GitHub CLI autenticado y acceso al repositorio y Project, ejecutar:
+Repositorio: [Isaac-Chaves-G/petstay-isaac](https://github.com/Isaac-Chaves-G/petstay-isaac).
+
+El workflow **Publicar casos de prueba** crea o reutiliza los 29 issues y guarda en `main` sus números reales, los tags `@issue:N` y la trazabilidad. Utiliza el token del propio workflow con permisos para issues y contenido de este repositorio; no requiere una nueva sesión local. También se puede repetir desde Actions → Publicar casos de prueba → Run workflow.
+
+### Ejecutar desde un issue
+
+1. Abre [Issues](https://github.com/Isaac-Chaves-G/petstay-isaac/issues) y selecciona un caso, por ejemplo `[TC01]`.
+2. En **Labels**, añade **ejecutar-prueba**. Debes estar conectado con una cuenta que pueda modificar etiquetas.
+3. Abre [Actions](https://github.com/Isaac-Chaves-G/petstay-isaac/actions/workflows/ci.yml). La ejecución muestra el título del caso; abre esa ejecución para ver los pasos y su resultado.
+4. En **Artifacts**, descarga `serenity-N`, extrae el ZIP y abre el `index.html` de Serenity. Las capturas se conservan también cuando falla una prueba.
+5. Para repetir el mismo caso, retira **ejecutar-prueba** del issue y vuelve a añadirla. Una etiqueta que ya estaba puesta no genera otra ejecución.
+
+TC14 y TC15 comprueban los defectos documentados y se espera que fallen mientras la aplicación conserve esos bugs. No debes cerrar el issue para ejecutar la prueba. La suite también se ejecuta en push y pull request; **Run workflow** permite indicar `TC01`..`TC29` o `todos`.
+
+### Vincular un GitHub Project (requisito adicional del taller)
+
+Crear un GitHub Project para el taller, o usar uno existente, y obtener su número. Con GitHub CLI autenticado y acceso al repositorio y Project, ejecutar:
 
    ```powershell
-   python scripts/publish_testcases.py --repo PROPIETARIO/REPOSITORIO --project-number NUMERO
+   python scripts/publish_testcases.py --repo Isaac-Chaves-G/petstay-isaac --project-number NUMERO
    ```
 
    El script vincula el Project al repo, crea/reutiliza los 29 issues, los añade al Project, registra sus URLs, añade tags `@issue:N` a los escenarios y configura enlaces del reporte. Usa archivos para los cuerpos de los issues. No crea repositorios ni realiza `push` automáticamente.
 
-4. Revisar los cambios generados, hacer commit y push. Verificar en GitHub que cada caso aparece en el Project y que sus tags coinciden con el número del issue.
-5. Revisar Actions → **PetStay Serenity BDD**. El workflow ejecuta la suite en push y pull request; desde **Run workflow** se puede seleccionar `TC01`..`TC29` o `todos`.
-6. Para ejecutar desde un TestCase, aplicar `ejecutar-prueba` al issue `[TCxx] ...`. La ejecución aparecerá en Actions. Para repetir, retirar la etiqueta y volverla a añadir. El workflow debe estar en la rama predeterminada.
-7. Descargar el artefacto `serenity-N` para revisar reporte y capturas, incluso cuando falle una prueba.
+Revisar los cambios generados, hacer commit y push. Verificar en GitHub que cada caso aparece en el Project y que sus tags coinciden con el número del issue. El token de publicación de issues no administra Projects de la cuenta; este paso sigue siendo independiente.
 
 El archivo de pipeline citado por el enunciado (`ci.yml` en Teams/Intu) no estaba incluido en los materiales locales. El workflow de este proyecto es una implementación equivalente propia; debe compararse con ese archivo si la profesora exige utilizarlo literalmente. GitHub Actions, los issues y el Project solo se consideran completados después de verificar su ejecución/publicación remota.
 

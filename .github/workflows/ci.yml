@@ -1,4 +1,5 @@
 name: PetStay Serenity BDD
+run-name: PetStay · ${{ github.event.issue.title || inputs.caso || 'Suite completa' }}
 
 on:
   push:

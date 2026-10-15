@@ -19,7 +19,7 @@ def gh(*args):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--repo', required=True, help='propietario/repositorio existente')
-    parser.add_argument('--project-number', required=True, type=int, help='Número del GitHub Project existente')
+    parser.add_argument('--project-number', type=int, help='Número del GitHub Project existente (opcional)')
     parser.add_argument('--project-owner', help='Propietario del Project; por defecto, propietario del repo')
     args = parser.parse_args()
     if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', args.repo):
@@ -27,8 +27,9 @@ def main():
     owner = args.project_owner or args.repo.split('/')[0]
     gh('auth', 'status')
     gh('repo', 'view', args.repo, '--json', 'nameWithOwner')
-    gh('project', 'view', str(args.project_number), '--owner', owner, '--format', 'json')
-    gh('project', 'link', str(args.project_number), '--owner', owner, '--repo', args.repo)
+    if args.project_number is not None:
+        gh('project', 'view', str(args.project_number), '--owner', owner, '--format', 'json')
+        gh('project', 'link', str(args.project_number), '--owner', owner, '--repo', args.repo)
     for label, color in [('testcase', '0E8A16'), ('HU02', '1D76DB'), ('ejecutar-prueba', '5319E7')]:
         gh('label', 'create', label, '--repo', args.repo, '--color', color, '--force')
     catalog = generate(args.repo)
@@ -36,7 +37,9 @@ def main():
     mapping = json.loads(mapping_path.read_text(encoding='utf-8')) if mapping_path.exists() else {}
     if mapping.get('repository', args.repo) != args.repo:
         raise SystemExit('El mapa existente pertenece a otro repositorio. No se modificarán sus enlaces.')
-    mapping.update(repository=args.repo, project_owner=owner, project_number=args.project_number)
+    mapping.update(repository=args.repo)
+    if args.project_number is not None:
+        mapping.update(project_owner=owner, project_number=args.project_number)
     mapping.setdefault('cases', {})
     existing = json.loads(gh('issue', 'list', '--repo', args.repo, '--state', 'all', '--limit', '1000', '--json', 'number,title,url'))
     by_title = {issue['title']: issue for issue in existing}
@@ -57,7 +60,8 @@ def main():
             return tags + f" @issue:{issue['number']}"
         text = re.sub(r'^  @' + case['id'] + r'\b[^\n]*', add_issue, text, flags=re.M)
         path.write_text(text, encoding='utf-8')
-        gh('project', 'item-add', str(args.project_number), '--owner', owner, '--url', issue['url'])
+        if args.project_number is not None:
+            gh('project', 'item-add', str(args.project_number), '--owner', owner, '--url', issue['url'])
         print(f"{case['id']} -> {issue['url']}")
     conf = ROOT / 'src/test/resources/serenity.conf'
     text = re.sub(r'^serenity.issue.tracker.url\s*=.*$',
