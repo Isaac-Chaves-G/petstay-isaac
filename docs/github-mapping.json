@@ -1,0 +1,121 @@
+{
+  "repository": "Isaac-Chaves-G/petstay-isaac",
+  "cases": {
+    "TC01": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/1",
+      "number": 1
+    },
+    "TC02": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/2",
+      "number": 2
+    },
+    "TC03": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/3",
+      "number": 3
+    },
+    "TC04": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/4",
+      "number": 4
+    },
+    "TC05": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/5",
+      "number": 5
+    },
+    "TC06": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/6",
+      "number": 6
+    },
+    "TC07": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/7",
+      "number": 7
+    },
+    "TC08": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/8",
+      "number": 8
+    },
+    "TC09": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/9",
+      "number": 9
+    },
+    "TC10": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/10",
+      "number": 10
+    },
+    "TC11": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/11",
+      "number": 11
+    },
+    "TC12": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/12",
+      "number": 12
+    },
+    "TC13": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/13",
+      "number": 13
+    },
+    "TC14": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/14",
+      "number": 14
+    },
+    "TC15": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/15",
+      "number": 15
+    },
+    "TC16": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/16",
+      "number": 16
+    },
+    "TC17": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/17",
+      "number": 17
+    },
+    "TC18": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/18",
+      "number": 18
+    },
+    "TC19": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/19",
+      "number": 19
+    },
+    "TC20": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/20",
+      "number": 20
+    },
+    "TC21": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/21",
+      "number": 21
+    },
+    "TC22": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/22",
+      "number": 22
+    },
+    "TC23": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/23",
+      "number": 23
+    },
+    "TC24": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/24",
+      "number": 24
+    },
+    "TC25": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/25",
+      "number": 25
+    },
+    "TC26": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/26",
+      "number": 26
+    },
+    "TC27": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/27",
+      "number": 27
+    },
+    "TC28": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/28",
+      "number": 28
+    },
+    "TC29": {
+      "url": "https://github.com/Isaac-Chaves-G/petstay-isaac/issues/29",
+      "number": 29
+    }
+  }
+}

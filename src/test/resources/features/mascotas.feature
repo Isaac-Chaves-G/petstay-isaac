@@ -6,7 +6,7 @@ Característica: Registro de mascotas
   Antecedentes:
     Dado el dueño ha iniciado sesión en PetStay
 
-  @TC03 @REQ_MASCOTAS_01 @REQ_MASCOTAS_03 @REQ_MASCOTAS_05 @positivo @frontera @smoke
+  @TC03 @REQ_MASCOTAS_01 @REQ_MASCOTAS_03 @REQ_MASCOTAS_05 @positivo @frontera @smoke @issue:3
   Esquema del escenario: Registro y clasificación por peso
     Cuando registra una mascota con estos datos:
       | nombre | especie   | peso   | edad | vacunas |
@@ -23,7 +23,7 @@ Característica: Registro de mascotas
       | Perro   | 25   | 25      | Grande  |
       | Perro   | 80   | 80      | Grande  |
 
-  @TC04 @REQ_MASCOTAS_02 @negativo
+  @TC04 @REQ_MASCOTAS_02 @negativo @issue:4
   Escenario: Rechazo de mascota sin vacunas al día
     Cuando registra una mascota con estos datos:
       | nombre | especie | peso | edad | vacunas |
@@ -31,7 +31,7 @@ Característica: Registro de mascotas
     Entonces el registro es rechazado con "No podemos hospedar mascotas sin vacunas al día"
     Y hay 0 mascotas registradas
 
-  @TC05 @REQ_MASCOTAS_04 @negativo
+  @TC05 @REQ_MASCOTAS_04 @negativo @issue:5
   Escenario: Rechazo de nombre duplicado sin distinguir mayúsculas
     Dado tiene registrada a "Luna" de especie "Gato" y peso "5"
     Cuando registra una mascota con estos datos:
@@ -40,7 +40,7 @@ Característica: Registro de mascotas
     Entonces el campo de mascota "nombre" indica "Ya existe una mascota registrada con ese nombre"
     Y hay 1 mascotas registradas
 
-  @TC06 @REQ_MASCOTAS_01 @negativo @frontera
+  @TC06 @REQ_MASCOTAS_01 @negativo @frontera @issue:6
   Esquema del escenario: Validación de longitud y obligatoriedad del nombre
     Cuando registra una mascota con estos datos:
       | nombre   | especie | peso | edad | vacunas |
@@ -54,7 +54,7 @@ Característica: Registro de mascotas
       | A                               | El nombre debe tener entre 2 y 30 caracteres  |
       | ABCDEFGHIJKLMNOPQRSTUVWXYZABCDE | El nombre debe tener entre 2 y 30 caracteres  |
 
-  @TC07 @REQ_MASCOTAS_01 @negativo @frontera
+  @TC07 @REQ_MASCOTAS_01 @negativo @frontera @issue:7
   Esquema del escenario: Rechazo de peso fuera de rango
     Cuando registra una mascota con estos datos:
       | nombre | especie | peso   | edad | vacunas |
@@ -68,7 +68,7 @@ Característica: Registro de mascotas
       | 80.1 |
       | -1   |
 
-  @TC08 @REQ_MASCOTAS_01 @negativo @frontera
+  @TC08 @REQ_MASCOTAS_01 @negativo @frontera @issue:8
   Esquema del escenario: Rechazo de edad fuera de rango
     Cuando registra una mascota con estos datos:
       | nombre | especie | peso | edad   | vacunas |
@@ -81,7 +81,7 @@ Característica: Registro de mascotas
       | -1   |
       | 26   |
 
-  @TC09 @REQ_MASCOTAS_01 @positivo @frontera
+  @TC09 @REQ_MASCOTAS_01 @positivo @frontera @issue:9
   Esquema del escenario: Aceptación de las edades límite
     Cuando registra una mascota con estos datos:
       | nombre | especie | peso | edad   | vacunas |

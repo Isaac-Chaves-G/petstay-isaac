@@ -7,7 +7,7 @@ Característica: Cancelación y reembolso
     Dado el dueño ha iniciado sesión en PetStay
     Y tiene registrada a "Toby" de especie "Perro" y peso "10"
 
-  @TC25 @REQ_CANCELACION_02 @REQ_CANCELACION_03 @REQ_CANCELACION_04 @positivo @frontera @smoke
+  @TC25 @REQ_CANCELACION_02 @REQ_CANCELACION_03 @REQ_CANCELACION_04 @positivo @frontera @smoke @issue:25
   Escenario: Cancelación con tres días de anticipación y reembolso completo
     Dado tiene una reserva de 2 noches para "Toby" con entrada en 3 días
     Cuando solicita cancelar su reserva
@@ -15,7 +15,7 @@ Característica: Cancelación y reembolso
     Cuando acepta la cancelación
     Entonces la reserva queda cancelada con reembolso de 80000 pesos y no admite otra cancelación
 
-  @TC26 @REQ_CANCELACION_03 @REQ_CANCELACION_04 @positivo @frontera
+  @TC26 @REQ_CANCELACION_03 @REQ_CANCELACION_04 @positivo @frontera @issue:26
   Esquema del escenario: Cancelación con uno o dos días y reembolso parcial
     Dado tiene una reserva de 2 noches para "Toby" con entrada en <dias> días
     Cuando solicita cancelar su reserva
@@ -28,7 +28,7 @@ Característica: Cancelación y reembolso
       | 1    |
       | 2    |
 
-  @TC27 @REQ_CANCELACION_03 @REQ_CANCELACION_04 @positivo @frontera
+  @TC27 @REQ_CANCELACION_03 @REQ_CANCELACION_04 @positivo @frontera @issue:27
   Escenario: Cancelación el mismo día sin reembolso
     Dado tiene una reserva de 2 noches para "Toby" con entrada en 0 días
     Cuando solicita cancelar su reserva
@@ -36,7 +36,7 @@ Característica: Cancelación y reembolso
     Cuando acepta la cancelación
     Entonces la reserva queda cancelada con reembolso de 0 pesos y no admite otra cancelación
 
-  @TC28 @REQ_CANCELACION_02 @positivo
+  @TC28 @REQ_CANCELACION_02 @positivo @issue:28
   Escenario: Conservar la reserva al rechazar la cancelación
     Dado tiene una reserva de 2 noches para "Toby" con entrada en 3 días
     Cuando solicita cancelar su reserva
@@ -44,7 +44,7 @@ Característica: Cancelación y reembolso
     Cuando decide conservar la reserva
     Entonces su reserva aparece confirmada por 80000 pesos con código válido y los datos solicitados
 
-  @TC29 @REQ_RESERVAS_09 @REQ_CANCELACION_04 @positivo
+  @TC29 @REQ_RESERVAS_09 @REQ_CANCELACION_04 @positivo @issue:29
   Escenario: Una cancelación libera las fechas para una nueva reserva
     Dado tiene una reserva de 2 noches para "Toby" con entrada en 3 días
     Cuando solicita cancelar su reserva
