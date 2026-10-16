@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.icesi.petstay.runners.CucumberTestSuite" tests="46" skipped="0" failures="2" errors="0" timestamp="2026-10-16T16:40:51.162Z" hostname="X-PRO-ISAAC" time="668.103">
+  <properties/>
+  <testcase name="Acceso con credenciales válidas" classname="com.icesi.petstay.runners.CucumberTestSuite" time="12.297"/>
+  <testcase name="Example #1.1" classname="com.icesi.petstay.runners.CucumberTestSuite" time="8.782"/>
+  <testcase name="Example #1.2" classname="com.icesi.petstay.runners.CucumberTestSuite" time="7.448"/>
+  <testcase name="Cancelación con tres días de anticipación y reembolso completo" classname="com.icesi.petstay.runners.CucumberTestSuite" time="17.866"/>
+  <testcase name="Example #1.1" classname="com.icesi.petstay.runners.CucumberTestSuite" time="25.782"/>
+  <testcase name="Example #1.2" classname="com.icesi.petstay.runners.CucumberTestSuite" time="20.456"/>
+  <testcase name="Cancelación el mismo día sin reembolso" classname="com.icesi.petstay.runners.CucumberTestSuite" time="25.672"/>
+  <testcase name="Conservar la reserva al rechazar la cancelación" classname="com.icesi.petstay.runners.CucumberTestSuite" time="23.19"/>
+  <testcase name="Una cancelación libera las fechas para una nueva reserva" classname="com.icesi.petstay.runners.CucumberTestSuite" time="27.487"/>
+  <testcase name="Example #1.1" classname="com.icesi.petstay.runners.CucumberTestSuite" time="8.053"/>
+  <testcase name="Example #1.2" classname="com.icesi.petstay.runners.CucumberTestSuite" time="7.827"/>
+  <testcase name="Example #1.3" classname="com.icesi.petstay.runners.CucumberTestSuite" time="7.364"/>
+  <testcase name="Example #1.4" classname="com.icesi.petstay.runners.CucumberTestSuite" time="8.051"/>
+  <testcase name="Example #1.5" classname="com.icesi.petstay.runners.CucumberTestSuite" time="7.921"/>
+  <testcase name="Example #1.6" classname="com.icesi.petstay.runners.CucumberTestSuite" time="7.373"/>
+  <testcase name="Rechazo de mascota sin vacunas al día" classname="com.icesi.petstay.runners.CucumberTestSuite" time="14.352"/>
+  <testcase name="Rechazo de nombre duplicado sin distinguir mayúsculas" classname="com.icesi.petstay.runners.CucumberTestSuite" time="14.763"/>
+  <testcase name="Example #1.1" classname="com.icesi.petstay.runners.CucumberTestSuite" time="12.102"/>
+  <testcase name="Example #1.2" classname="com.icesi.petstay.runners.CucumberTestSuite" time="12.579"/>
+  <testcase name="Example #1.3" classname="com.icesi.petstay.runners.CucumberTestSuite" time="10.55"/>
+  <testcase name="Example #1.1" classname="com.icesi.petstay.runners.CucumberTestSuite" time="12.743"/>
+  <testcase name="Example #1.2" classname="com.icesi.petstay.runners.CucumberTestSuite" time="27.814"/>
+  <testcase name="Example #1.3" classname="com.icesi.petstay.runners.CucumberTestSuite" time="20.889"/>
+  <testcase name="Example #1.1" classname="com.icesi.petstay.runners.CucumberTestSuite" time="13.721"/>
+  <testcase name="Example #1.2" classname="com.icesi.petstay.runners.CucumberTestSuite" time="9.373"/>
+  <testcase name="Example #1.1" classname="com.icesi.petstay.runners.CucumberTestSuite" time="10.182"/>
+  <testcase name="Example #1.2" classname="com.icesi.petstay.runners.CucumberTestSuite" time="11.681"/>
+  <testcase name="Registro previo requerido para reservar" classname="com.icesi.petstay.runners.CucumberTestSuite" time="6.792"/>
+  <testcase name="Example #1.1" classname="com.icesi.petstay.runners.CucumberTestSuite" time="14.332"/>
+  <testcase name="Example #1.2" classname="com.icesi.petstay.runners.CucumberTestSuite" time="13.427"/>
+  <testcase name="Example #1.3" classname="com.icesi.petstay.runners.CucumberTestSuite" time="17.387"/>
+  <testcase name="Baño como cargo único por estadía" classname="com.icesi.petstay.runners.CucumberTestSuite" time="19.132"/>
+  <testcase name="Descuento de estadía larga aplicado solo al alojamiento" classname="com.icesi.petstay.runners.CucumberTestSuite" time="16.779"/>
+  <testcase name="Siete noches no reciben descuento" classname="com.icesi.petstay.runners.CucumberTestSuite" time="12.864">
+    <failure message="java.lang.AssertionError: Expected: descuento that is not displayed&#10;Actual:   web element is displayed" type="java.lang.AssertionError">java.lang.AssertionError: Expected: descuento that is not displayed
+Actual:   web element is displayed
+	at net.serenitybdd.screenplay.ensure.PerformableExpectationsKt.handleException(PerformableExpectations.kt:17)
+	at net.serenitybdd.screenplay.ensure.PerformableExpectationsKt.access$handleException(PerformableExpectations.kt:1)
+	at net.serenitybdd.screenplay.ensure.PerformablePredicate.performAs(PerformableExpectations.kt:140)
+	at net.serenitybdd.screenplay.ensure.PerformablePredicate$ByteBuddy$VGPKbKi3.performAs$accessor$l1rTKG2c(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.ensure.PerformablePredicate$ByteBuddy$VGPKbKi3.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.icesi.petstay.stepdefinitions.BookingSteps.checksCharge(BookingSteps.java:42)
+	at com.icesi.petstay.stepdefinitions.BookingSteps.summary(BookingSteps.java:35)
+	at ✽.el resumen muestra 7 noches, alojamiento 280000, descuento 0, baño 0, paseo 0 y total 280000(classpath:features/reservas.feature:46)
+</failure>
+  </testcase>
+  <testcase name="Paseo diario cobrado por cada noche" classname="com.icesi.petstay.runners.CucumberTestSuite" time="16.045">
+    <failure message="java.lang.AssertionError: Expected: valor en pesos de precio de los paseos that is equal to: &lt;30000&gt;&#10;Actual:   &lt;10000&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Expected: valor en pesos de precio de los paseos that is equal to: &lt;30000&gt;
+Actual:   &lt;10000&gt;
+	at net.serenitybdd.screenplay.ensure.PerformableExpectationsKt.handleException(PerformableExpectations.kt:17)
+	at net.serenitybdd.screenplay.ensure.PerformableExpectationsKt.access$handleException(PerformableExpectations.kt:1)
+	at net.serenitybdd.screenplay.ensure.PerformableExpectation.performAs(PerformableExpectations.kt:54)
+	at net.serenitybdd.screenplay.ensure.PerformableExpectation$ByteBuddy$ncwoH0WG.performAs$accessor$2dDx4OQp(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.ensure.PerformableExpectation$ByteBuddy$ncwoH0WG.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at com.icesi.petstay.stepdefinitions.BookingSteps.checksCharge(BookingSteps.java:44)
+	at com.icesi.petstay.stepdefinitions.BookingSteps.summary(BookingSteps.java:37)
+	at ✽.el resumen muestra 3 noches, alojamiento 120000, descuento 0, baño 0, paseo 30000 y total 150000(classpath:features/reservas.feature:53)
+</failure>
+  </testcase>
+  <testcase name="Rechazo de entrada anterior a hoy" classname="com.icesi.petstay.runners.CucumberTestSuite" time="12.266"/>
+  <testcase name="Example #1.1" classname="com.icesi.petstay.runners.CucumberTestSuite" time="12.229"/>
+  <testcase name="Example #1.2" classname="com.icesi.petstay.runners.CucumberTestSuite" time="14.096"/>
+  <testcase name="Example #1.1" classname="com.icesi.petstay.runners.CucumberTestSuite" time="14.507"/>
+  <testcase name="Example #1.2" classname="com.icesi.petstay.runners.CucumberTestSuite" time="14.02"/>
+  <testcase name="Rechazo de una estadía de 31 noches" classname="com.icesi.petstay.runners.CucumberTestSuite" time="13.276"/>
+  <testcase name="Aceptación de una estadía de 30 noches" classname="com.icesi.petstay.runners.CucumberTestSuite" time="15.004"/>
+  <testcase name="Rechazo de fechas cruzadas para la misma mascota" classname="com.icesi.petstay.runners.CucumberTestSuite" time="16.417"/>
+  <testcase name="Reservas consecutivas comparten el día de salida y entrada" classname="com.icesi.petstay.runners.CucumberTestSuite" time="23.102"/>
+  <testcase name="Paseo diario no disponible para gatos" classname="com.icesi.petstay.runners.CucumberTestSuite" time="13.303"/>
+  <testcase name="Confirmación y consulta de la reserva" classname="com.icesi.petstay.runners.CucumberTestSuite" time="16.753"/>
+  <system-out><![CDATA[
+@HU02 @acceso @TC01 @REQ_ACCESO_01 @smoke @positivo @issue:1
+Escenario: Acceso con credenciales válidas                             ?[90m# features/acceso.feature:7?[0m
+  ?[32mDado ?[0m?[32mel dueño está en el acceso de PetStay?[0m                           ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.opensLogin()?[0m
+  ?[32mCuando ?[0m?[32minicia sesión con usuario ?[0m?[32m?[1m"dueno"?[0m?[32m y contraseña ?[0m?[32m?[1m"huellitas123"?[0m ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.logsIn(java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mpuede gestionar sus mascotas?[0m                                ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.seesPets()?[0m
+
+@HU02 @acceso @TC02 @REQ_ACCESO_02 @negativo @issue:2
+Esquema del escenario: Rechazo de credenciales inválidas                 ?[90m# features/acceso.feature:20?[0m
+  ?[32mDado ?[0m?[32mel dueño está en el acceso de PetStay?[0m                             ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.opensLogin()?[0m
+  ?[32mCuando ?[0m?[32minicia sesión con usuario ?[0m?[32m?[1m"dueno"?[0m?[32m y contraseña ?[0m?[32m?[1m"incorrecta"?[0m     ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.logsIn(java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel acceso es rechazado con ?[0m?[32m?[1m"Usuario o contraseña incorrectos"?[0m ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.seesLoginError(java.lang.String)?[0m
+
+@HU02 @acceso @TC02 @REQ_ACCESO_02 @negativo @issue:2
+Esquema del escenario: Rechazo de credenciales inválidas                 ?[90m# features/acceso.feature:21?[0m
+  ?[32mDado ?[0m?[32mel dueño está en el acceso de PetStay?[0m                             ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.opensLogin()?[0m
+  ?[32mCuando ?[0m?[32minicia sesión con usuario ?[0m?[32m?[1m"ajeno"?[0m?[32m y contraseña ?[0m?[32m?[1m"huellitas123"?[0m   ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.logsIn(java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel acceso es rechazado con ?[0m?[32m?[1m"Usuario o contraseña incorrectos"?[0m ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.seesLoginError(java.lang.String)?[0m
+
+@HU02 @cancelaciones @TC25 @REQ_CANCELACION_02 @REQ_CANCELACION_03 @REQ_CANCELACION_04 @positivo @frontera @smoke @issue:25
+Escenario: Cancelación con tres días de anticipación y reembolso completo                       ?[90m# features/cancelaciones.feature:11?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                   ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mY ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                    ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mDado ?[0m?[32mtiene una reserva de ?[0m?[32m?[1m2?[0m?[32m noches para ?[0m?[32m?[1m"Toby"?[0m?[32m con entrada en ?[0m?[32m?[1m3?[0m?[32m días?[0m                          ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.existingReservation(int,java.lang.String,int)?[0m
+  ?[32mCuando ?[0m?[32msolicita cancelar su reserva?[0m                                                           ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.requestsCancellation()?[0m
+  ?[32mEntonces ?[0m?[32mse le pide confirmar con un reembolso del ?[0m?[32m?[1m100?[0m?[32m por ciento?[0m                             ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.checksDialog(int)?[0m
+  ?[32mCuando ?[0m?[32macepta la cancelación?[0m                                                                  ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.confirmsCancellation()?[0m
+  ?[32mEntonces ?[0m?[32mla reserva queda cancelada con reembolso de ?[0m?[32m?[1m80000?[0m?[32m pesos y no admite otra cancelación?[0m ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.cancelled(int)?[0m
+
+@HU02 @cancelaciones @TC26 @REQ_CANCELACION_03 @REQ_CANCELACION_04 @positivo @frontera @issue:26
+Esquema del escenario: Cancelación con uno o dos días y reembolso parcial                       ?[90m# features/cancelaciones.feature:28?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                   ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mY ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                    ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mDado ?[0m?[32mtiene una reserva de ?[0m?[32m?[1m2?[0m?[32m noches para ?[0m?[32m?[1m"Toby"?[0m?[32m con entrada en ?[0m?[32m?[1m1?[0m?[32m días?[0m                          ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.existingReservation(int,java.lang.String,int)?[0m
+  ?[32mCuando ?[0m?[32msolicita cancelar su reserva?[0m                                                           ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.requestsCancellation()?[0m
+  ?[32mEntonces ?[0m?[32mse le pide confirmar con un reembolso del ?[0m?[32m?[1m50?[0m?[32m por ciento?[0m                              ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.checksDialog(int)?[0m
+  ?[32mCuando ?[0m?[32macepta la cancelación?[0m                                                                  ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.confirmsCancellation()?[0m
+  ?[32mEntonces ?[0m?[32mla reserva queda cancelada con reembolso de ?[0m?[32m?[1m40000?[0m?[32m pesos y no admite otra cancelación?[0m ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.cancelled(int)?[0m
+
+@HU02 @cancelaciones @TC26 @REQ_CANCELACION_03 @REQ_CANCELACION_04 @positivo @frontera @issue:26
+Esquema del escenario: Cancelación con uno o dos días y reembolso parcial                       ?[90m# features/cancelaciones.feature:29?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                   ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mY ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                    ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mDado ?[0m?[32mtiene una reserva de ?[0m?[32m?[1m2?[0m?[32m noches para ?[0m?[32m?[1m"Toby"?[0m?[32m con entrada en ?[0m?[32m?[1m2?[0m?[32m días?[0m                          ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.existingReservation(int,java.lang.String,int)?[0m
+  ?[32mCuando ?[0m?[32msolicita cancelar su reserva?[0m                                                           ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.requestsCancellation()?[0m
+  ?[32mEntonces ?[0m?[32mse le pide confirmar con un reembolso del ?[0m?[32m?[1m50?[0m?[32m por ciento?[0m                              ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.checksDialog(int)?[0m
+  ?[32mCuando ?[0m?[32macepta la cancelación?[0m                                                                  ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.confirmsCancellation()?[0m
+  ?[32mEntonces ?[0m?[32mla reserva queda cancelada con reembolso de ?[0m?[32m?[1m40000?[0m?[32m pesos y no admite otra cancelación?[0m ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.cancelled(int)?[0m
+
+@HU02 @cancelaciones @TC27 @REQ_CANCELACION_03 @REQ_CANCELACION_04 @positivo @frontera @issue:27
+Escenario: Cancelación el mismo día sin reembolso                                           ?[90m# features/cancelaciones.feature:32?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                               ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mY ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mDado ?[0m?[32mtiene una reserva de ?[0m?[32m?[1m2?[0m?[32m noches para ?[0m?[32m?[1m"Toby"?[0m?[32m con entrada en ?[0m?[32m?[1m0?[0m?[32m días?[0m                      ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.existingReservation(int,java.lang.String,int)?[0m
+  ?[32mCuando ?[0m?[32msolicita cancelar su reserva?[0m                                                       ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.requestsCancellation()?[0m
+  ?[32mEntonces ?[0m?[32mse le pide confirmar con un reembolso del ?[0m?[32m?[1m0?[0m?[32m por ciento?[0m                           ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.checksDialog(int)?[0m
+  ?[32mCuando ?[0m?[32macepta la cancelación?[0m                                                              ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.confirmsCancellation()?[0m
+  ?[32mEntonces ?[0m?[32mla reserva queda cancelada con reembolso de ?[0m?[32m?[1m0?[0m?[32m pesos y no admite otra cancelación?[0m ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.cancelled(int)?[0m
+
+@HU02 @cancelaciones @TC28 @REQ_CANCELACION_02 @positivo @issue:28
+Escenario: Conservar la reserva al rechazar la cancelación                                         ?[90m# features/cancelaciones.feature:40?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                      ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mY ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                       ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mDado ?[0m?[32mtiene una reserva de ?[0m?[32m?[1m2?[0m?[32m noches para ?[0m?[32m?[1m"Toby"?[0m?[32m con entrada en ?[0m?[32m?[1m3?[0m?[32m días?[0m                             ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.existingReservation(int,java.lang.String,int)?[0m
+  ?[32mCuando ?[0m?[32msolicita cancelar su reserva?[0m                                                              ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.requestsCancellation()?[0m
+  ?[32mEntonces ?[0m?[32mse le pide confirmar con un reembolso del ?[0m?[32m?[1m100?[0m?[32m por ciento?[0m                                ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.checksDialog(int)?[0m
+  ?[32mCuando ?[0m?[32mdecide conservar la reserva?[0m                                                               ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.declinesCancellation()?[0m
+  ?[32mEntonces ?[0m?[32msu reserva aparece confirmada por ?[0m?[32m?[1m80000?[0m?[32m pesos con código válido y los datos solicitados?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.checksReservation(int)?[0m
+
+@HU02 @cancelaciones @TC29 @REQ_RESERVAS_09 @REQ_CANCELACION_04 @positivo @issue:29
+Escenario: Una cancelación libera las fechas para una nueva reserva                                ?[90m# features/cancelaciones.feature:48?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                      ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mY ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                       ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mDado ?[0m?[32mtiene una reserva de ?[0m?[32m?[1m2?[0m?[32m noches para ?[0m?[32m?[1m"Toby"?[0m?[32m con entrada en ?[0m?[32m?[1m3?[0m?[32m días?[0m                             ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.existingReservation(int,java.lang.String,int)?[0m
+  ?[32mCuando ?[0m?[32msolicita cancelar su reserva?[0m                                                              ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.requestsCancellation()?[0m
+  ?[32mY ?[0m?[32macepta la cancelación?[0m                                                                          ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.confirmsCancellation()?[0m
+  ?[32mEntonces ?[0m?[32mla reserva queda cancelada con reembolso de ?[0m?[32m?[1m80000?[0m?[32m pesos y no admite otra cancelación?[0m    ?[90m# com.icesi.petstay.stepdefinitions.CancellationSteps.cancelled(int)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                           ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m2?[0m?[32m noches con entrada en ?[0m?[32m?[1m3?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                                ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mconfirma la estadía?[0m                                                                            ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.confirms()?[0m
+  ?[32mY ?[0m?[32mconsulta sus reservas?[0m                                                                          ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.listsReservations()?[0m
+  ?[32mEntonces ?[0m?[32msu reserva aparece confirmada por ?[0m?[32m?[1m80000?[0m?[32m pesos con código válido y los datos solicitados?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.checksReservation(int)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m2?[0m?[32m reservas en la lista?[0m                                                                     ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.reservationCount(int)?[0m
+
+@HU02 @mascotas @TC03 @REQ_MASCOTAS_01 @REQ_MASCOTAS_03 @REQ_MASCOTAS_05 @positivo @frontera @smoke @issue:3
+Esquema del escenario: Registro y clasificación por peso                                     ?[90m# features/mascotas.feature:19?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                               ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Luna   | Gato    | 0.1  | 3    | sí      |
+  ?[32mEntonces ?[0m?[32mla mascota ?[0m?[32m?[1m"Luna"?[0m?[32m aparece como ?[0m?[32m?[1m"Gato"?[0m?[32m con peso ?[0m?[32m?[1m"0,1"?[0m?[32m, edad ?[0m?[32m?[1m"3"?[0m?[32m y tamaño ?[0m?[32m?[1m"Pequeño"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.checksPet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m mascotas registradas?[0m                                                               ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC03 @REQ_MASCOTAS_01 @REQ_MASCOTAS_03 @REQ_MASCOTAS_05 @positivo @frontera @smoke @issue:3
+Esquema del escenario: Registro y clasificación por peso                                     ?[90m# features/mascotas.feature:20?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                               ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Luna   | Perro   | 10   | 3    | sí      |
+  ?[32mEntonces ?[0m?[32mla mascota ?[0m?[32m?[1m"Luna"?[0m?[32m aparece como ?[0m?[32m?[1m"Perro"?[0m?[32m con peso ?[0m?[32m?[1m"10"?[0m?[32m, edad ?[0m?[32m?[1m"3"?[0m?[32m y tamaño ?[0m?[32m?[1m"Pequeño"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.checksPet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m mascotas registradas?[0m                                                               ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC03 @REQ_MASCOTAS_01 @REQ_MASCOTAS_03 @REQ_MASCOTAS_05 @positivo @frontera @smoke @issue:3
+Esquema del escenario: Registro y clasificación por peso                                       ?[90m# features/mascotas.feature:21?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                  ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                                 ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Luna   | Perro   | 10.1 | 3    | sí      |
+  ?[32mEntonces ?[0m?[32mla mascota ?[0m?[32m?[1m"Luna"?[0m?[32m aparece como ?[0m?[32m?[1m"Perro"?[0m?[32m con peso ?[0m?[32m?[1m"10,1"?[0m?[32m, edad ?[0m?[32m?[1m"3"?[0m?[32m y tamaño ?[0m?[32m?[1m"Mediano"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.checksPet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m mascotas registradas?[0m                                                                 ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC03 @REQ_MASCOTAS_01 @REQ_MASCOTAS_03 @REQ_MASCOTAS_05 @positivo @frontera @smoke @issue:3
+Esquema del escenario: Registro y clasificación por peso                                       ?[90m# features/mascotas.feature:22?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                  ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                                 ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Luna   | Perro   | 24.9 | 3    | sí      |
+  ?[32mEntonces ?[0m?[32mla mascota ?[0m?[32m?[1m"Luna"?[0m?[32m aparece como ?[0m?[32m?[1m"Perro"?[0m?[32m con peso ?[0m?[32m?[1m"24,9"?[0m?[32m, edad ?[0m?[32m?[1m"3"?[0m?[32m y tamaño ?[0m?[32m?[1m"Mediano"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.checksPet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m mascotas registradas?[0m                                                                 ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC03 @REQ_MASCOTAS_01 @REQ_MASCOTAS_03 @REQ_MASCOTAS_05 @positivo @frontera @smoke @issue:3
+Esquema del escenario: Registro y clasificación por peso                                    ?[90m# features/mascotas.feature:23?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                               ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                              ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Luna   | Perro   | 25   | 3    | sí      |
+  ?[32mEntonces ?[0m?[32mla mascota ?[0m?[32m?[1m"Luna"?[0m?[32m aparece como ?[0m?[32m?[1m"Perro"?[0m?[32m con peso ?[0m?[32m?[1m"25"?[0m?[32m, edad ?[0m?[32m?[1m"3"?[0m?[32m y tamaño ?[0m?[32m?[1m"Grande"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.checksPet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m mascotas registradas?[0m                                                              ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC03 @REQ_MASCOTAS_01 @REQ_MASCOTAS_03 @REQ_MASCOTAS_05 @positivo @frontera @smoke @issue:3
+Esquema del escenario: Registro y clasificación por peso                                    ?[90m# features/mascotas.feature:24?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                               ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                              ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Luna   | Perro   | 80   | 3    | sí      |
+  ?[32mEntonces ?[0m?[32mla mascota ?[0m?[32m?[1m"Luna"?[0m?[32m aparece como ?[0m?[32m?[1m"Perro"?[0m?[32m con peso ?[0m?[32m?[1m"80"?[0m?[32m, edad ?[0m?[32m?[1m"3"?[0m?[32m y tamaño ?[0m?[32m?[1m"Grande"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.checksPet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m mascotas registradas?[0m                                                              ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC04 @REQ_MASCOTAS_02 @negativo @issue:4
+Escenario: Rechazo de mascota sin vacunas al día                                          ?[90m# features/mascotas.feature:27?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                             ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                            ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Toby   | Perro   | 8    | 2    | no      |
+  ?[32mEntonces ?[0m?[32mel registro es rechazado con ?[0m?[32m?[1m"No podemos hospedar mascotas sin vacunas al día"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registrationRejected(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m0?[0m?[32m mascotas registradas?[0m                                                            ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC05 @REQ_MASCOTAS_04 @negativo @issue:5
+Escenario: Rechazo de nombre duplicado sin distinguir mayúsculas                                 ?[90m# features/mascotas.feature:35?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                    ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Luna"?[0m?[32m de especie ?[0m?[32m?[1m"Gato"?[0m?[32m y peso ?[0m?[32m?[1m"5"?[0m                                    ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                                   ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | LUNA   | Perro   | 8    | 2    | sí      |
+  ?[32mEntonces ?[0m?[32mel campo de mascota ?[0m?[32m?[1m"nombre"?[0m?[32m indica ?[0m?[32m?[1m"Ya existe una mascota registrada con ese nombre"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.fieldError(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m mascotas registradas?[0m                                                                   ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC06 @REQ_MASCOTAS_01 @negativo @frontera @issue:6
+Esquema del escenario: Validación de longitud y obligatoriedad del nombre  ?[90m# features/mascotas.feature:53?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                              ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                             ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre  | especie | peso | edad | vacunas |
+    | [empty] | Perro   | 8    | 2    | sí      |
+  ?[32mEntonces ?[0m?[32mel campo de mascota ?[0m?[32m?[1m"nombre"?[0m?[32m indica ?[0m?[32m?[1m"Este campo es obligatorio"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.fieldError(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m0?[0m?[32m mascotas registradas?[0m                                             ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC06 @REQ_MASCOTAS_01 @negativo @frontera @issue:6
+Esquema del escenario: Validación de longitud y obligatoriedad del nombre                     ?[90m# features/mascotas.feature:54?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                 ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                                ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | A      | Perro   | 8    | 2    | sí      |
+  ?[32mEntonces ?[0m?[32mel campo de mascota ?[0m?[32m?[1m"nombre"?[0m?[32m indica ?[0m?[32m?[1m"El nombre debe tener entre 2 y 30 caracteres"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.fieldError(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m0?[0m?[32m mascotas registradas?[0m                                                                ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC06 @REQ_MASCOTAS_01 @negativo @frontera @issue:6
+Esquema del escenario: Validación de longitud y obligatoriedad del nombre                     ?[90m# features/mascotas.feature:55?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                 ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                                ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre                          | especie | peso | edad | vacunas |
+    | ABCDEFGHIJKLMNOPQRSTUVWXYZABCDE | Perro   | 8    | 2    | sí      |
+  ?[32mEntonces ?[0m?[32mel campo de mascota ?[0m?[32m?[1m"nombre"?[0m?[32m indica ?[0m?[32m?[1m"El nombre debe tener entre 2 y 30 caracteres"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.fieldError(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m0?[0m?[32m mascotas registradas?[0m                                                                ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC07 @REQ_MASCOTAS_01 @negativo @frontera @issue:7
+Esquema del escenario: Rechazo de peso fuera de rango                                      ?[90m# features/mascotas.feature:67?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                              ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                             ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Toby   | Perro   | 0    | 2    | sí      |
+  ?[32mEntonces ?[0m?[32mel campo de mascota ?[0m?[32m?[1m"peso"?[0m?[32m indica ?[0m?[32m?[1m"El peso debe ser mayor que 0 y máximo 80 kg"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.fieldError(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m0?[0m?[32m mascotas registradas?[0m                                                             ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC07 @REQ_MASCOTAS_01 @negativo @frontera @issue:7
+Esquema del escenario: Rechazo de peso fuera de rango                                      ?[90m# features/mascotas.feature:68?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                              ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                             ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Toby   | Perro   | 80.1 | 2    | sí      |
+  ?[32mEntonces ?[0m?[32mel campo de mascota ?[0m?[32m?[1m"peso"?[0m?[32m indica ?[0m?[32m?[1m"El peso debe ser mayor que 0 y máximo 80 kg"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.fieldError(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m0?[0m?[32m mascotas registradas?[0m                                                             ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC07 @REQ_MASCOTAS_01 @negativo @frontera @issue:7
+Esquema del escenario: Rechazo de peso fuera de rango                                      ?[90m# features/mascotas.feature:69?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                              ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                             ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Toby   | Perro   | -1   | 2    | sí      |
+  ?[32mEntonces ?[0m?[32mel campo de mascota ?[0m?[32m?[1m"peso"?[0m?[32m indica ?[0m?[32m?[1m"El peso debe ser mayor que 0 y máximo 80 kg"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.fieldError(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m0?[0m?[32m mascotas registradas?[0m                                                             ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC08 @REQ_MASCOTAS_01 @negativo @frontera @issue:8
+Esquema del escenario: Rechazo de edad fuera de rango                               ?[90m# features/mascotas.feature:81?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                       ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                      ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Toby   | Perro   | 8    | -1   | sí      |
+  ?[32mEntonces ?[0m?[32mel campo de mascota ?[0m?[32m?[1m"edad"?[0m?[32m indica ?[0m?[32m?[1m"La edad debe estar entre 0 y 25 años"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.fieldError(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m0?[0m?[32m mascotas registradas?[0m                                                      ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC08 @REQ_MASCOTAS_01 @negativo @frontera @issue:8
+Esquema del escenario: Rechazo de edad fuera de rango                               ?[90m# features/mascotas.feature:82?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                       ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                      ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Toby   | Perro   | 8    | 26   | sí      |
+  ?[32mEntonces ?[0m?[32mel campo de mascota ?[0m?[32m?[1m"edad"?[0m?[32m indica ?[0m?[32m?[1m"La edad debe estar entre 0 y 25 años"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.fieldError(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m0?[0m?[32m mascotas registradas?[0m                                                      ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC09 @REQ_MASCOTAS_01 @positivo @frontera @issue:9
+Esquema del escenario: Aceptación de las edades límite                                      ?[90m# features/mascotas.feature:94?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                               ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                              ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Toby   | Perro   | 8    | 0    | sí      |
+  ?[32mEntonces ?[0m?[32mla mascota ?[0m?[32m?[1m"Toby"?[0m?[32m aparece como ?[0m?[32m?[1m"Perro"?[0m?[32m con peso ?[0m?[32m?[1m"8"?[0m?[32m, edad ?[0m?[32m?[1m"0"?[0m?[32m y tamaño ?[0m?[32m?[1m"Pequeño"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.checksPet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m mascotas registradas?[0m                                                              ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @mascotas @TC09 @REQ_MASCOTAS_01 @positivo @frontera @issue:9
+Esquema del escenario: Aceptación de las edades límite                                       ?[90m# features/mascotas.feature:95?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mregistra una mascota con estos datos:?[0m                                               ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registersPet(io.cucumber.datatable.DataTable)?[0m
+    | nombre | especie | peso | edad | vacunas |
+    | Toby   | Perro   | 8    | 25   | sí      |
+  ?[32mEntonces ?[0m?[32mla mascota ?[0m?[32m?[1m"Toby"?[0m?[32m aparece como ?[0m?[32m?[1m"Perro"?[0m?[32m con peso ?[0m?[32m?[1m"8"?[0m?[32m, edad ?[0m?[32m?[1m"25"?[0m?[32m y tamaño ?[0m?[32m?[1m"Pequeño"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.checksPet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m mascotas registradas?[0m                                                               ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.petCount(int)?[0m
+
+@HU02 @reservas @TC10 @REQ_RESERVAS_01 @negativo @issue:10
+Escenario: Registro previo requerido para reservar             ?[90m# features/reservas.feature:10?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                  ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mCuando ?[0m?[32mconsulta la disponibilidad para reservar sin mascotas?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.noPets()?[0m
+  ?[32mEntonces ?[0m?[32mdebe registrar una mascota antes de reservar?[0m        ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.requiresPet()?[0m
+
+@HU02 @reservas @TC11 @REQ_RESERVAS_05 @REQ_RESERVAS_08 @positivo @issue:11
+Esquema del escenario: Tarifa de alojamiento según el tamaño                                          ?[90m# features/reservas.feature:23?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                         ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                       ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                              ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m2?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                                  ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel resumen muestra ?[0m?[32m?[1m2?[0m?[32m noches, alojamiento ?[0m?[32m?[1m80000?[0m?[32m, descuento ?[0m?[32m?[1m0?[0m?[32m, baño ?[0m?[32m?[1m0?[0m?[32m, paseo ?[0m?[32m?[1m0?[0m?[32m y total ?[0m?[32m?[1m80000?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.summary(int,int,int,int,int,int)?[0m
+
+@HU02 @reservas @TC11 @REQ_RESERVAS_05 @REQ_RESERVAS_08 @positivo @issue:11
+Esquema del escenario: Tarifa de alojamiento según el tamaño                                            ?[90m# features/reservas.feature:24?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                           ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"15"?[0m                                         ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                                ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m2?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                                    ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel resumen muestra ?[0m?[32m?[1m2?[0m?[32m noches, alojamiento ?[0m?[32m?[1m110000?[0m?[32m, descuento ?[0m?[32m?[1m0?[0m?[32m, baño ?[0m?[32m?[1m0?[0m?[32m, paseo ?[0m?[32m?[1m0?[0m?[32m y total ?[0m?[32m?[1m110000?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.summary(int,int,int,int,int,int)?[0m
+
+@HU02 @reservas @TC11 @REQ_RESERVAS_05 @REQ_RESERVAS_08 @positivo @issue:11
+Esquema del escenario: Tarifa de alojamiento según el tamaño                                            ?[90m# features/reservas.feature:25?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                           ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"25"?[0m                                         ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                                ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m2?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                                    ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel resumen muestra ?[0m?[32m?[1m2?[0m?[32m noches, alojamiento ?[0m?[32m?[1m140000?[0m?[32m, descuento ?[0m?[32m?[1m0?[0m?[32m, baño ?[0m?[32m?[1m0?[0m?[32m, paseo ?[0m?[32m?[1m0?[0m?[32m y total ?[0m?[32m?[1m140000?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.summary(int,int,int,int,int,int)?[0m
+
+@HU02 @reservas @TC12 @REQ_RESERVAS_06 @REQ_RESERVAS_08 @positivo @issue:12
+Escenario: Baño como cargo único por estadía                                                               ?[90m# features/reservas.feature:28?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                              ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                            ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                                   ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m2?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"sí"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                                       ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel resumen muestra ?[0m?[32m?[1m2?[0m?[32m noches, alojamiento ?[0m?[32m?[1m80000?[0m?[32m, descuento ?[0m?[32m?[1m0?[0m?[32m, baño ?[0m?[32m?[1m25000?[0m?[32m, paseo ?[0m?[32m?[1m0?[0m?[32m y total ?[0m?[32m?[1m105000?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.summary(int,int,int,int,int,int)?[0m
+
+@HU02 @reservas @TC13 @REQ_RESERVAS_07 @REQ_RESERVAS_08 @positivo @frontera @issue:13
+Escenario: Descuento de estadía larga aplicado solo al alojamiento                                              ?[90m# features/reservas.feature:35?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                                   ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                                 ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                                        ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m8?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"sí"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                                            ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel resumen muestra ?[0m?[32m?[1m8?[0m?[32m noches, alojamiento ?[0m?[32m?[1m320000?[0m?[32m, descuento ?[0m?[32m?[1m48000?[0m?[32m, baño ?[0m?[32m?[1m25000?[0m?[32m, paseo ?[0m?[32m?[1m0?[0m?[32m y total ?[0m?[32m?[1m297000?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.summary(int,int,int,int,int,int)?[0m
+
+@HU02 @reservas @TC14 @REQ_RESERVAS_07 @positivo @frontera @defecto_conocido @issue:14
+Escenario: Siete noches no reciben descuento                                                            ?[90m# features/reservas.feature:42?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                           ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                         ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                                ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m7?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                                    ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[31mEntonces ?[0m?[31mel resumen muestra ?[0m?[31m?[1m7?[0m?[31m noches, alojamiento ?[0m?[31m?[1m280000?[0m?[31m, descuento ?[0m?[31m?[1m0?[0m?[31m, baño ?[0m?[31m?[1m0?[0m?[31m, paseo ?[0m?[31m?[1m0?[0m?[31m y total ?[0m?[31m?[1m280000?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.summary(int,int,int,int,int,int)?[0m
+      ?[31mjava.lang.AssertionError: Expected: descuento that is not displayed
+      Actual:   web element is displayed
+      	at net.serenitybdd.screenplay.ensure.PerformableExpectationsKt.handleException(PerformableExpectations.kt:17)
+      	at net.serenitybdd.screenplay.ensure.PerformableExpectationsKt.access$handleException(PerformableExpectations.kt:1)
+      	at net.serenitybdd.screenplay.ensure.PerformablePredicate.performAs(PerformableExpectations.kt:140)
+      	at net.serenitybdd.screenplay.ensure.PerformablePredicate$ByteBuddy$VGPKbKi3.performAs$accessor$l1rTKG2c(Unknown Source)
+      	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+      	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+      	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+      	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+      	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+      	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+      	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+      	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+      	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+      	at net.serenitybdd.screenplay.ensure.PerformablePredicate$ByteBuddy$VGPKbKi3.performAs(Unknown Source)
+      	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+      	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+      	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+      	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+      	at com.icesi.petstay.stepdefinitions.BookingSteps.checksCharge(BookingSteps.java:42)
+      	at com.icesi.petstay.stepdefinitions.BookingSteps.summary(BookingSteps.java:35)
+      	at ✽.el resumen muestra 7 noches, alojamiento 280000, descuento 0, baño 0, paseo 0 y total 280000(classpath:features/reservas.feature:46)?[0m
+
+@HU02 @reservas @TC15 @REQ_RESERVAS_06 @positivo @defecto_conocido @issue:15
+Escenario: Paseo diario cobrado por cada noche                                                              ?[90m# features/reservas.feature:49?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                               ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                             ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                                    ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m3?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"sí"?[0m                                        ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[31mEntonces ?[0m?[31mel resumen muestra ?[0m?[31m?[1m3?[0m?[31m noches, alojamiento ?[0m?[31m?[1m120000?[0m?[31m, descuento ?[0m?[31m?[1m0?[0m?[31m, baño ?[0m?[31m?[1m0?[0m?[31m, paseo ?[0m?[31m?[1m30000?[0m?[31m y total ?[0m?[31m?[1m150000?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.summary(int,int,int,int,int,int)?[0m
+      ?[31mjava.lang.AssertionError: Expected: valor en pesos de precio de los paseos that is equal to: <30000>
+      Actual:   <10000>
+      	at net.serenitybdd.screenplay.ensure.PerformableExpectationsKt.handleException(PerformableExpectations.kt:17)
+      	at net.serenitybdd.screenplay.ensure.PerformableExpectationsKt.access$handleException(PerformableExpectations.kt:1)
+      	at net.serenitybdd.screenplay.ensure.PerformableExpectation.performAs(PerformableExpectations.kt:54)
+      	at net.serenitybdd.screenplay.ensure.PerformableExpectation$ByteBuddy$ncwoH0WG.performAs$accessor$2dDx4OQp(Unknown Source)
+      	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+      	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+      	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+      	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+      	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+      	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+      	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+      	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+      	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+      	at net.serenitybdd.screenplay.ensure.PerformableExpectation$ByteBuddy$ncwoH0WG.performAs(Unknown Source)
+      	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+      	at net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+      	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+      	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+      	at com.icesi.petstay.stepdefinitions.BookingSteps.checksCharge(BookingSteps.java:44)
+      	at com.icesi.petstay.stepdefinitions.BookingSteps.summary(BookingSteps.java:37)
+      	at ✽.el resumen muestra 3 noches, alojamiento 120000, descuento 0, baño 0, paseo 30000 y total 150000(classpath:features/reservas.feature:53)?[0m
+
+@HU02 @reservas @TC16 @REQ_RESERVAS_03 @negativo @issue:16
+Escenario: Rechazo de entrada anterior a hoy                                                      ?[90m# features/reservas.feature:56?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                     ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                   ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                          ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m2?[0m?[32m noches con entrada en ?[0m?[32m?[1m-1?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                              ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel campo de reserva ?[0m?[32m?[1m"entrada"?[0m?[32m indica ?[0m?[32m?[1m"La fecha de entrada no puede ser anterior a hoy"?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.fieldError(java.lang.String,java.lang.String)?[0m
+
+@HU02 @reservas @TC17 @REQ_RESERVAS_03 @negativo @frontera @issue:17
+Esquema del escenario: Rechazo de salida que no es posterior a la entrada                              ?[90m# features/reservas.feature:71?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                          ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                        ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                               ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m0?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                                   ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel campo de reserva ?[0m?[32m?[1m"salida"?[0m?[32m indica ?[0m?[32m?[1m"La fecha de salida debe ser posterior a la de entrada"?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.fieldError(java.lang.String,java.lang.String)?[0m
+
+@HU02 @reservas @TC17 @REQ_RESERVAS_03 @negativo @frontera @issue:17
+Esquema del escenario: Rechazo de salida que no es posterior a la entrada                              ?[90m# features/reservas.feature:72?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                          ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                        ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                               ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m-1?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                                  ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel campo de reserva ?[0m?[32m?[1m"salida"?[0m?[32m indica ?[0m?[32m?[1m"La fecha de salida debe ser posterior a la de entrada"?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.fieldError(java.lang.String,java.lang.String)?[0m
+
+@HU02 @reservas @TC18 @REQ_RESERVAS_02 @negativo @issue:18
+Esquema del escenario: Rechazo de fechas inválidas                                               ?[90m# features/reservas.feature:83?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                    ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                  ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                         ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita entrada ?[0m?[32m?[1m"2099-01-01"?[0m?[32m y salida ?[0m?[32m?[1m"10/01/2099"?[0m                                          ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.rawDates(java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel campo de reserva ?[0m?[32m?[1m"entrada"?[0m?[32m indica ?[0m?[32m?[1m"Usa el formato DD/MM/AAAA con una fecha válida"?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.fieldError(java.lang.String,java.lang.String)?[0m
+
+@HU02 @reservas @TC18 @REQ_RESERVAS_02 @negativo @issue:18
+Esquema del escenario: Rechazo de fechas inválidas                                               ?[90m# features/reservas.feature:84?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                    ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                  ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                         ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita entrada ?[0m?[32m?[1m"32/01/2099"?[0m?[32m y salida ?[0m?[32m?[1m"10/01/2099"?[0m                                          ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.rawDates(java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel campo de reserva ?[0m?[32m?[1m"entrada"?[0m?[32m indica ?[0m?[32m?[1m"Usa el formato DD/MM/AAAA con una fecha válida"?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.fieldError(java.lang.String,java.lang.String)?[0m
+
+@HU02 @reservas @TC19 @REQ_RESERVAS_04 @negativo @frontera @issue:19
+Escenario: Rechazo de una estadía de 31 noches                                     ?[90m# features/reservas.feature:87?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                      ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                    ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                           ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m31?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m              ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel campo de reserva ?[0m?[32m?[1m"salida"?[0m?[32m indica ?[0m?[32m?[1m"La estadía máxima es de 30 noches"?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.fieldError(java.lang.String,java.lang.String)?[0m
+
+@HU02 @reservas @TC20 @REQ_RESERVAS_04 @positivo @frontera @issue:20
+Escenario: Aceptación de una estadía de 30 noches                                                               ?[90m# features/reservas.feature:94?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                                   ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                                 ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                                        ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m30?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                                           ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel resumen muestra ?[0m?[32m?[1m30?[0m?[32m noches, alojamiento ?[0m?[32m?[1m1200000?[0m?[32m, descuento ?[0m?[32m?[1m180000?[0m?[32m, baño ?[0m?[32m?[1m0?[0m?[32m, paseo ?[0m?[32m?[1m0?[0m?[32m y total ?[0m?[32m?[1m1020000?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.summary(int,int,int,int,int,int)?[0m
+
+@HU02 @reservas @TC21 @REQ_RESERVAS_09 @negativo @issue:21
+Escenario: Rechazo de fechas cruzadas para la misma mascota                                      ?[90m# features/reservas.feature:101?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                    ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                  ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mtiene una reserva de ?[0m?[32m?[1m3?[0m?[32m noches para ?[0m?[32m?[1m"Toby"?[0m?[32m con entrada en ?[0m?[32m?[1m10?[0m?[32m días?[0m                             ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.existingReservation(int,java.lang.String,int)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                         ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m2?[0m?[32m noches con entrada en ?[0m?[32m?[1m11?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                             ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mla reserva es rechazada con ?[0m?[32m?[1m"Esta mascota ya tiene una reserva activa en esas fechas"?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.generalError(java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mconsulta sus reservas?[0m                                                                   ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.listsReservations()?[0m
+  ?[32mEntonces ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m reservas en la lista?[0m                                                            ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.reservationCount(int)?[0m
+
+@HU02 @reservas @TC22 @REQ_RESERVAS_09 @positivo @frontera @issue:22
+Escenario: Reservas consecutivas comparten el día de salida y entrada                              ?[90m# features/reservas.feature:111?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                      ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                    ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mtiene una reserva de ?[0m?[32m?[1m3?[0m?[32m noches para ?[0m?[32m?[1m"Toby"?[0m?[32m con entrada en ?[0m?[32m?[1m10?[0m?[32m días?[0m                               ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.existingReservation(int,java.lang.String,int)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                           ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m2?[0m?[32m noches con entrada en ?[0m?[32m?[1m13?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                               ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mconfirma la estadía?[0m                                                                            ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.confirms()?[0m
+  ?[32mY ?[0m?[32mconsulta sus reservas?[0m                                                                          ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.listsReservations()?[0m
+  ?[32mEntonces ?[0m?[32msu reserva aparece confirmada por ?[0m?[32m?[1m80000?[0m?[32m pesos con código válido y los datos solicitados?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.checksReservation(int)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m2?[0m?[32m reservas en la lista?[0m                                                                     ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.reservationCount(int)?[0m
+
+@HU02 @reservas @TC23 @REQ_RESERVAS_06 @negativo @issue:23
+Escenario: Paseo diario no disponible para gatos              ?[90m# features/reservas.feature:122?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                 ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Luna"?[0m?[32m de especie ?[0m?[32m?[1m"Gato"?[0m?[32m y peso ?[0m?[32m?[1m"5"?[0m ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Luna"?[0m                      ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel paseo diario no está disponible?[0m                 ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.walkDisabled()?[0m
+
+@HU02 @reservas @TC24 @REQ_RESERVAS_10 @REQ_CANCELACION_01 @positivo @smoke @issue:24
+Escenario: Confirmación y consulta de la reserva                                                   ?[90m# features/reservas.feature:128?[0m
+  ?[32mDado ?[0m?[32mel dueño ha iniciado sesión en PetStay?[0m                                                      ?[90m# com.icesi.petstay.stepdefinitions.AccessSteps.authenticatedOwner()?[0m
+  ?[32mDado ?[0m?[32mtiene registrada a ?[0m?[32m?[1m"Toby"?[0m?[32m de especie ?[0m?[32m?[1m"Perro"?[0m?[32m y peso ?[0m?[32m?[1m"10"?[0m                                    ?[90m# com.icesi.petstay.stepdefinitions.PetSteps.registeredPet(java.lang.String,java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mprepara una estadía para ?[0m?[32m?[1m"Toby"?[0m                                                           ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.prepares(java.lang.String)?[0m
+  ?[32mY ?[0m?[32msolicita ?[0m?[32m?[1m2?[0m?[32m noches con entrada en ?[0m?[32m?[1m10?[0m?[32m días, baño ?[0m?[32m?[1m"no"?[0m?[32m y paseo ?[0m?[32m?[1m"no"?[0m                               ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.plans(int,int,java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mconfirma la estadía?[0m                                                                            ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.confirms()?[0m
+  ?[32mY ?[0m?[32mconsulta sus reservas?[0m                                                                          ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.listsReservations()?[0m
+  ?[32mEntonces ?[0m?[32msu reserva aparece confirmada por ?[0m?[32m?[1m80000?[0m?[32m pesos con código válido y los datos solicitados?[0m ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.checksReservation(int)?[0m
+  ?[32mY ?[0m?[32mhay ?[0m?[32m?[1m1?[0m?[32m reservas en la lista?[0m                                                                     ?[90m# com.icesi.petstay.stepdefinitions.BookingSteps.reservationCount(int)?[0m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at https://serenity-bdd.info                                     
+ Documentation at https://serenity-bdd.github.io                                     
+ Test Automation Training and Coaching: https://www.serenity-dojo.com                
+ Commercial Support: https://www.serenity-dojo.com/serenity-bdd-enterprise-support   
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+-------------------------------------------------------------------------------------
+
+[Test worker] INFO  - Test Suite Started: Acceso al hotel PetStay
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:40:56 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:40:56 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:41:04 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:41:04 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:41:13 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:41:13 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - Test Suite Started: Cancelación y reembolso
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:41:20 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:41:20 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:41:39 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:41:39 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:42:04 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:42:04 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:42:25 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:42:25 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:42:51 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:42:51 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:43:14 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:43:14 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - Test Suite Started: Registro de mascotas
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:43:41 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:43:41 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:43:49 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:43:49 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:43:57 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:43:57 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:44:04 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:44:04 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:44:12 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:44:12 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:44:20 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:44:20 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:44:27 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:44:27 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:44:43 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:44:43 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:44:56 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:44:56 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:45:09 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:45:09 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:45:21 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:45:21 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:45:32 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:45:32 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:45:48 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:45:48 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:46:21 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:46:21 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:46:34 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:46:34 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:46:47 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:46:47 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:46:56 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:46:56 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:47:06 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:47:06 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - Test Suite Started: Reserva de estadías
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:47:18 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:47:18 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:47:25 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:47:25 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:47:39 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:47:39 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:47:52 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:47:52 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:48:11 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:48:11 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:48:29 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:48:29 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:48:46 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:48:46 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:48:59 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:48:59 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:49:15 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:49:15 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:49:27 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:49:27 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:49:39 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:49:39 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:49:53 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:49:53 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:50:08 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:50:08 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:50:22 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:50:22 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:50:35 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:50:35 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:50:50 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:50:50 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:51:07 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:51:07 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:51:30 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:51:30 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless=new, --window-size=1440,1000, --disable-dev-shm-usage, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}
+oct 16, 2026 11:51:43 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 155
+oct 16, 2026 11:51:43 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 155.0.8059.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Acceso con credenciales válidas(acceso-al-hotel-petstay;acceso-con-credenciales-válidas)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Acceso con credenciales válidas
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Rechazo de credenciales inválidas(acceso-al-hotel-petstay;rechazo-de-credenciales-inválidas)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de credenciales inválidas
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de credenciales inválidas
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Cancelación con tres días de anticipación y reembolso completo(cancelación-y-reembolso;cancelación-con-tres-días-de-anticipación-y-reembolso-completo)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Cancelación con tres días de anticipación y reembolso completo
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Cancelación con uno o dos días y reembolso parcial(cancelación-y-reembolso;cancelación-con-uno-o-dos-días-y-reembolso-parcial)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Cancelación con uno o dos días y reembolso parcial
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Cancelación con uno o dos días y reembolso parcial
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Cancelación el mismo día sin reembolso(cancelación-y-reembolso;cancelación-el-mismo-día-sin-reembolso)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Cancelación el mismo día sin reembolso
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Conservar la reserva al rechazar la cancelación(cancelación-y-reembolso;conservar-la-reserva-al-rechazar-la-cancelación)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Conservar la reserva al rechazar la cancelación
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Una cancelación libera las fechas para una nueva reserva(cancelación-y-reembolso;una-cancelación-libera-las-fechas-para-una-nueva-reserva)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Una cancelación libera las fechas para una nueva reserva
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Registro y clasificación por peso(registro-de-mascotas;registro-y-clasificación-por-peso)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Registro y clasificación por peso
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Registro y clasificación por peso
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Rechazo de mascota sin vacunas al día(registro-de-mascotas;rechazo-de-mascota-sin-vacunas-al-día)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de mascota sin vacunas al día
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Rechazo de nombre duplicado sin distinguir mayúsculas(registro-de-mascotas;rechazo-de-nombre-duplicado-sin-distinguir-mayúsculas)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de nombre duplicado sin distinguir mayúsculas
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Validación de longitud y obligatoriedad del nombre(registro-de-mascotas;validación-de-longitud-y-obligatoriedad-del-nombre)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Validación de longitud y obligatoriedad del nombre
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Validación de longitud y obligatoriedad del nombre
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Rechazo de peso fuera de rango(registro-de-mascotas;rechazo-de-peso-fuera-de-rango)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de peso fuera de rango
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de peso fuera de rango
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Rechazo de edad fuera de rango(registro-de-mascotas;rechazo-de-edad-fuera-de-rango)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de edad fuera de rango
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de edad fuera de rango
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Aceptación de las edades límite(registro-de-mascotas;aceptación-de-las-edades-límite)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Aceptación de las edades límite
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Aceptación de las edades límite
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Registro previo requerido para reservar(reserva-de-estadías;registro-previo-requerido-para-reservar)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Registro previo requerido para reservar
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Tarifa de alojamiento según el tamaño(reserva-de-estadías;tarifa-de-alojamiento-según-el-tamaño)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Tarifa de alojamiento según el tamaño
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Tarifa de alojamiento según el tamaño
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Baño como cargo único por estadía(reserva-de-estadías;baño-como-cargo-único-por-estadía)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Baño como cargo único por estadía
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Descuento de estadía larga aplicado solo al alojamiento(reserva-de-estadías;descuento-de-estadía-larga-aplicado-solo-al-alojamiento)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Descuento de estadía larga aplicado solo al alojamiento
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Siete noches no reciben descuento(reserva-de-estadías;siete-noches-no-reciben-descuento)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Paseo diario cobrado por cada noche(reserva-de-estadías;paseo-diario-cobrado-por-cada-noche)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Rechazo de entrada anterior a hoy(reserva-de-estadías;rechazo-de-entrada-anterior-a-hoy)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de entrada anterior a hoy
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Rechazo de salida que no es posterior a la entrada(reserva-de-estadías;rechazo-de-salida-que-no-es-posterior-a-la-entrada)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de salida que no es posterior a la entrada
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de salida que no es posterior a la entrada
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Rechazo de fechas inválidas(reserva-de-estadías;rechazo-de-fechas-inválidas)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de fechas inválidas
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de fechas inválidas
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Rechazo de una estadía de 31 noches(reserva-de-estadías;rechazo-de-una-estadía-de-31-noches)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de una estadía de 31 noches
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Aceptación de una estadía de 30 noches(reserva-de-estadías;aceptación-de-una-estadía-de-30-noches)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Aceptación de una estadía de 30 noches
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Rechazo de fechas cruzadas para la misma mascota(reserva-de-estadías;rechazo-de-fechas-cruzadas-para-la-misma-mascota)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Rechazo de fechas cruzadas para la misma mascota
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Reservas consecutivas comparten el día de salida y entrada(reserva-de-estadías;reservas-consecutivas-comparten-el-día-de-salida-y-entrada)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Reservas consecutivas comparten el día de salida y entrada
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Paseo diario no disponible para gatos(reserva-de-estadías;paseo-diario-no-disponible-para-gatos)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Paseo diario no disponible para gatos
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Confirmación y consulta de la reserva(reserva-de-estadías;confirmación-y-consulta-de-la-reserva)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Confirmación y consulta de la reserva
+----------------------------------------------------------------------
+]]></system-err>
+</testsuite>

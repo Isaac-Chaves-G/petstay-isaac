@@ -1,5 +1,11 @@
 # Resultados de ejecución
 
+## Versión corregida verificada en GitHub Actions
+
+La [suite completa corregida](https://github.com/Isaac-Chaves-G/petstay-isaac/actions/runs/38934652821), commit `28b6c6a`, ejecutó los **29 casos y 46 ejemplos: 44 correctos y 2 fallidos**, exclusivamente **TC14 y TC15**. La selección, el resumen y la subida del reporte terminaron correctamente. El job global conserva **FAILURE** porque esos dos casos detectan incumplimientos de la historia; no hay otros fallos de escenarios.
+
+El [workflow de filtros](https://github.com/Isaac-Chaves-G/petstay-isaac/actions/runs/38934653353) terminó en verde para TC01 y TC12. El Summary de cada ejecución informa sus resultados reales; los artefactos incluyen pasos, capturas y JSON. Evidencia pública de la suite: `evidencias/auditoria-2026-10-16/ci-suite.json`.
+
 ## Auditoría del 16 de octubre de 2026
 
 Los fallos reportados en GitHub con `Tc01`, `@TC12` y `@TC14` ocurrieron en **Resolver caso solicitado**, antes de ejecutar Cucumber. El selector anterior solo admitía `TC` en mayúsculas y sin `@`. Evidencias remotas: [Tc01](https://github.com/Isaac-Chaves-G/petstay-isaac/actions/runs/38817992286), [@TC12](https://github.com/Isaac-Chaves-G/petstay-isaac/actions/runs/38827584382) y [@TC14](https://github.com/Isaac-Chaves-G/petstay-isaac/actions/runs/38827776960). Esos resultados no prueban defectos de PetStay.
@@ -8,7 +14,11 @@ Se corrigió la normalización del selector y su resolución por número real de
 
 Se revisaron las 29 expectativas contra la historia de usuario. Las comprobaciones del registro ahora comparan cada celda completa; un importe esperado de cero admite tanto la fila oculta como el valor cero visible. Cualquier importe distinto sigue fallando. La verificación final exige `SUCCESS` en Serenity, incluyendo los casos pendientes como resultados no exitosos. El Summary utiliza los resultados de Serenity, incluso cuando JUnit no propaga un fallo de Screenplay.
 
-TC14 y TC15 conservan las expectativas de la historia: **más de siete** noches para descuento y paseo por **cada noche**. No se excluyen de la suite. Las nuevas ejecuciones se documentan a continuación al finalizar; los resultados históricos no sustituyen la validación de esta versión.
+TC14 y TC15 conservan las expectativas de la historia: **más de siete** noches para descuento y paseo por **cada noche**. No se excluyen de la suite.
+
+La repetición local iniciada antes de los cambios de Java ejecutó **46 pruebas: 44 correctas y 2 fallidas**, únicamente TC14 y TC15; no hubo errores ni escenarios omitidos. Se conserva como línea de base en `evidencias/auditoria-2026-10-16/local-antes-correccion.json` y `junit-antes-correccion.xml`. La validación de la versión corregida en GitHub se documenta por separado.
+
+El [workflow de regresión de filtros](https://github.com/Isaac-Chaves-G/petstay-isaac/actions/runs/38934653353), commit `28b6c6a`, terminó **SUCCESS**: `Tc01` seleccionó TC01 y `@TC12` seleccionó TC12. Ambos ejecutaron su prueba, generaron reportes y pasaron; no se trata de jobs sin escenarios. Evidencia: `evidencias/auditoria-2026-10-16/ci-filtros.json`.
 
 ## Ejecución inicial local
 
