@@ -1,0 +1,21 @@
+name: Verificar filtros PetStay
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ci.yml'
+      - '.github/workflows/auditoria.yml'
+      - 'scripts/select_case.py'
+      - 'scripts/test_select_case.py'
+permissions:
+  contents: read
+jobs:
+  casos-reportados:
+    strategy:
+      fail-fast: false
+      matrix:
+        caso: ['Tc01', '@TC12']
+    uses: ./.github/workflows/ci.yml
+    with:
+      caso: ${{ matrix.caso }}

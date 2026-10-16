@@ -62,7 +62,7 @@ Se conserva Serenity **4.2.32**, que aparece en el `build.gradle` entregado por 
 
 La guía técnica actualizada propone el estilo de Screenplay aplicado aquí. El nombre del reporter se adapta a la versión elegida: en Serenity 4.2.32 es `io.cucumber.core.plugin.SerenityReporterParallel`, comprobado en el JAR. La ruta `net.serenitybdd.cucumber.core.plugin...` de la guía corresponde a otra generación y no existe en este JAR. El runner utiliza la suite JUnit Platform.
 
-Se incluye `verifySerenityResults`, ejecutado después de generar el reporte. En esta combinación algunas fallas de tareas anidadas pueden quedar registradas por Serenity sin propagarse a JUnit Platform. La verificación lee los resultados reales de Serenity y hace fallar Gradle si encuentra errores o fallos; también rechaza una ejecución sin resultados. No omite defectos ni convierte fallos en éxitos.
+Se incluye `verifySerenityResults`, ejecutado después de generar el reporte. En esta combinación algunas fallas de tareas anidadas pueden quedar registradas por Serenity sin propagarse a JUnit Platform. La verificación exige que todos los resultados reales de Serenity sean `SUCCESS`; rechaza fallos, errores, pendientes y ejecuciones sin resultados. No omite defectos ni convierte fallos en éxitos.
 
 El ZIP del ejemplo contenía scripts `gradlew` pero no los archivos completos del wrapper. Este proyecto incorpora el wrapper oficial y verifica la distribución de Gradle con SHA-256. Los materiales originales permanecen fuera del proyecto, sin modificaciones.
 
@@ -81,10 +81,12 @@ El workflow **Publicar casos de prueba** crea o reutiliza los 29 issues y guarda
 1. Abre [Issues](https://github.com/Isaac-Chaves-G/petstay-isaac/issues) y selecciona un caso, por ejemplo `[TC01]`.
 2. En **Labels**, añade **ejecutar-prueba**. Debes estar conectado con una cuenta que pueda modificar etiquetas.
 3. Abre [Actions](https://github.com/Isaac-Chaves-G/petstay-isaac/actions/workflows/ci.yml). La ejecución muestra el título del caso; abre esa ejecución para ver los pasos y su resultado.
-4. En **Artifacts**, descarga `serenity-N`, extrae el ZIP y abre el `index.html` de Serenity. Las capturas se conservan también cuando falla una prueba.
+4. En **Artifacts**, descarga `serenity-N-CASO`, extrae el ZIP y abre `target/site/serenity/index.html`. Las capturas se conservan también cuando falla una prueba; el Summary muestra los casos ejecutados.
 5. Para repetir el mismo caso, retira **ejecutar-prueba** del issue y vuelve a añadirla. Una etiqueta que ya estaba puesta no genera otra ejecución.
 
-TC14 y TC15 comprueban los defectos documentados y se espera que fallen mientras la aplicación conserve esos bugs. No debes cerrar el issue para ejecutar la prueba. La suite también se ejecuta en push y pull request; **Run workflow** permite indicar `TC01`..`TC29` o `todos`.
+TC14 y TC15 comprueban los defectos documentados y se espera que fallen mientras la aplicación conserve esos bugs. No debes cerrar el issue para ejecutar la prueba. La suite también se ejecuta en push y pull request; **Run workflow** permite indicar `TC01`..`TC29` o `todos`. El selector de Actions admite `Tc01`, `@TC12` y `@tc14`, con espacios alrededor; los normaliza al tag real. Las órdenes Gradle directas siguen usando los tags exactos, como `@TC01`.
+
+El workflow **Verificar filtros PetStay** comprueba los dos casos reportados que deben pasar (`Tc01` y `@TC12`) mediante el mismo pipeline. Los issues se resuelven por su número real en `docs/github-mapping.json`, aunque cambie su título. Los filtros inexistentes se rechazan antes de lanzar pruebas.
 
 ### Vincular un GitHub Project (requisito adicional del taller)
 

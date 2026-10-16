@@ -29,7 +29,10 @@ public class PetSteps {
     @Entonces("la mascota {string} aparece como {string} con peso {string}, edad {string} y tamaño {string}")
     public void checksPet(String name, String species, String weight, String age, String size) {
         theActorInTheSpotlight().attemptsTo(
-                Ensure.that(PetsPage.ROW.of(name)).text().contains(name, species, weight + " kg", age + " años"),
+                Ensure.that(PetsPage.CELL.of(name, "1")).text().isEqualTo(name),
+                Ensure.that(PetsPage.CELL.of(name, "2")).text().isEqualTo(species),
+                Ensure.that(PetsPage.CELL.of(name, "3")).text().isEqualTo(weight + " kg"),
+                Ensure.that(PetsPage.CELL.of(name, "4")).text().isEqualTo(age + ("1".equals(age) ? " año" : " años")),
                 Ensure.that(PetsPage.SIZE.of(name)).text().isEqualTo(size));
     }
     @Entonces("el registro es rechazado con {string}")

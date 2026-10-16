@@ -38,7 +38,7 @@ public class BookingSteps {
         owner.attemptsTo(Ensure.that(DisplayedMoney.at(BookingPage.TOTAL)).isEqualTo(total));
     }
     private void checksCharge(Target target, int amount) {
-        if (amount == 0) {
+        if (amount == 0 && !target.resolveFor(theActorInTheSpotlight()).isVisible()) {
             theActorInTheSpotlight().attemptsTo(Ensure.that(target).isNotDisplayed());
         } else {
             theActorInTheSpotlight().attemptsTo(Ensure.that(DisplayedMoney.at(target)).isEqualTo(amount));

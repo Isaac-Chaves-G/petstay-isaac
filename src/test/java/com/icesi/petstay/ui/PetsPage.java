@@ -16,6 +16,8 @@ public final class PetsPage {
     public static final Target ROWS = Target.the("mascotas registradas").locatedBy("#tabla-mascotas tbody tr");
     public static final Target ROW = Target.the("mascota {0}")
             .locatedBy("//table[@id='tabla-mascotas']/tbody/tr[td[@class='nombre' and normalize-space()='{0}']]");
+    public static final Target CELL = Target.the("dato {1} de la mascota {0}")
+            .locatedBy("//table[@id='tabla-mascotas']/tbody/tr[td[@class='nombre' and normalize-space()='{0}']]/td[{1}]");
     public static final Target SIZE = Target.the("tamaño de {0}")
             .locatedBy("//table[@id='tabla-mascotas']/tbody/tr[td[@class='nombre' and normalize-space()='{0}']]//span[@class='etiqueta-tamano']");
 }

@@ -8,8 +8,14 @@ on:
   workflow_dispatch:
     inputs:
       caso:
-        description: 'Caso TC01..TC29 o todos'
+        description: 'TC01..TC29 o todos; admite @ y minúsculas, por ejemplo @tc12'
         required: true
+        default: todos
+  workflow_call:
+    inputs:
+      caso:
+        type: string
+        required: false
         default: todos
   issues:
     types: [labeled]
@@ -20,47 +26,40 @@ permissions:
 jobs:
   pruebas:
     if: github.event_name != 'issues' || github.event.label.name == 'ejecutar-prueba'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v5
+      - name: Verificar selección de casos
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Resolver caso solicitado
+        id: seleccion
+        env:
+          INPUT_CASE: ${{ inputs.caso }}
+        run: python scripts/select_case.py
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '21'
-      - uses: gradle/actions/setup-gradle@v4
-      - name: Resolver caso solicitado
-        id: seleccion
-        shell: python
-        env:
-          INPUT_CASE: ${{ inputs.caso }}
-        run: |
-          import json, os, re
-          with open(os.environ['GITHUB_EVENT_PATH'], encoding='utf-8') as f:
-              event = json.load(f)
-          case = os.environ.get('INPUT_CASE') or 'todos'
-          if os.environ['GITHUB_EVENT_NAME'] == 'issues':
-              title = event['issue']['title']
-              match = re.match(r'^\[(TC\d{2})\]', title)
-              if not match:
-                  raise SystemExit('El issue debe comenzar por [TC01]..[TC29]')
-              case = match.group(1)
-          if case != 'todos' and not re.fullmatch(r'TC(?:0[1-9]|1[0-9]|2[0-9])', case):
-              raise SystemExit('Caso inválido')
-          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as f:
-              f.write('tags=' + ('@HU02' if case == 'todos' else '@' + case) + '\n')
+      - uses: gradle/actions/setup-gradle@v5
       - name: Ejecutar escenarios y generar reporte
         env:
           CUCUMBER_TAGS: ${{ steps.seleccion.outputs.tags }}
         run: bash ./gradlew clean test aggregate "-Dcucumber.filter.tags=$CUCUMBER_TAGS" --console=plain
+      - name: Resumir resultados ejecutados
+        if: always() && steps.seleccion.outcome == 'success'
+        env:
+          INPUT_CASE: ${{ steps.seleccion.outputs.case }}
+        run: python scripts/summarize_results.py
       - name: Conservar reporte y capturas incluso si una prueba falla
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
-          name: serenity-${{ github.run_number }}
+          name: serenity-${{ github.run_number }}-${{ steps.seleccion.outputs.case || 'sin-caso' }}
           if-no-files-found: warn
           retention-days: 14
           path: |
             target/site/serenity/
             build/reports/tests/
             build/test-results/test/
+            target/audit-summary.json
